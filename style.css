@@ -1,0 +1,86 @@
+/* Twitter Dark Theme */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #e1e8ed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, input[type="button"], input[type="submit"] {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  background-color: #1a91da;
+}
+
+input[type="text"], textarea {
+  background-color: #15181c;
+  color: #e1e8ed;
+  border: 1px solid #38444d;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: #1da1f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 1px solid #38444d;
+  border-right: 1px solid #38444d;
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: 1px solid #38444d;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.tweet {
+  border-bottom: 1px solid #38444d;
+  padding: 16px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.tweet:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
