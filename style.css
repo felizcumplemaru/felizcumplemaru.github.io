@@ -71,13 +71,15 @@ input[type="text"]:focus, textarea:focus {
 }
 
 .tweet {
-  border-bottom: 1px solid #38444d;
+  border: 1px solid #38444d;
   padding: 16px;
   transition: background-color 0.2s;
   margin: 30px;
   border-radius: 20px;
-  height: 800px;
-  width: 800px;
+  height: 75vh;
+  width: 75vh;
+  display: flex;
+  gap: 16px;
 }
 
 .tweet:hover {
@@ -89,12 +91,26 @@ h1, h2, h3 {
 }
 
 .profile-col {
-  height: 800px;
-  width: 130px;
+  height: 100%;
+  width: 15%;
+  flex-shrink: 0;
+}
+
+.content-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .profile {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 95%;
+    height: 95%;
+}
+
+.content-col {
+  height: 100%;
+  width: 85%;
+  padding-left: 10px;
 }
