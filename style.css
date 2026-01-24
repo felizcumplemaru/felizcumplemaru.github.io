@@ -74,7 +74,10 @@ input[type="text"]:focus, textarea:focus {
   border-bottom: 1px solid #38444d;
   padding: 16px;
   transition: background-color 0.2s;
-  cursor: pointer;
+  margin: 30px;
+  border-radius: 20px;
+  height: 800px;
+  width: 800px;
 }
 
 .tweet:hover {
@@ -83,4 +86,15 @@ input[type="text"]:focus, textarea:focus {
 
 h1, h2, h3 {
   color: #fff;
+}
+
+.profile-col {
+  height: 800px;
+  width: 130px;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
 }
