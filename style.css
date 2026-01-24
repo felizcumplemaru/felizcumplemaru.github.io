@@ -106,11 +106,26 @@ h1, h2, h3 {
 .profile {
     border-radius: 50%;
     width: 95%;
-    height: 95%;
+    height: auto;
 }
 
 .content-col {
   height: 100%;
   width: 85%;
   padding-left: 10px;
+}
+
+.content-img {
+    border-radius: 2%;
+    border: .5px solid #38444d;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    object-fit: cover;
+    padding: 2px
+}
+
+.content-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
