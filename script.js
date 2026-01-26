@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!mapImage) return;
     
-    // Azimuthal Equidistant Projection centered at South Pole
+    // Lambert Azimuthal Equal-Area Projection centered at South Pole
     // Calibrate these values by identifying the map center and scale
     const mapConfig = {
         centerPixelX: 366,        // Pixel X coordinate of the projection center (south pole)
-        centerPixelY: 2615,        // Pixel Y coordinate of the projection center (south pole)
-        scale: 1,              // Pixels per degree of angular distance from pole
-        orientation: 0         // Rotation angle in degrees (0 = north up, adjust if needed)
+        centerPixelY: 2615,       // Pixel Y coordinate of the projection center (south pole)
+        scale: 1,                 // Pixels per degree of angular distance from pole
+        orientation: 0            // Rotation angle in degrees (0 = north up, adjust if needed)
     };
     
     mapImage.addEventListener('click', function(event) {
@@ -20,31 +20,33 @@ document.addEventListener('DOMContentLoaded', function() {
         const pixelX = event.clientX - rect.left;
         const pixelY = event.clientY - rect.top;
         
-        // Convert pixel coordinates to geographic coordinates using azimuthal equidistant projection
-        const { longitude, latitude } = pixelToCoordinatesAzimuthal(pixelX, pixelY, mapConfig);
+        // Convert pixel coordinates to geographic coordinates using Lambert Azimuthal Equal-Area projection
+        const { longitude, latitude } = pixelToCoordinatesLambertAzimuthal(pixelX, pixelY, mapConfig);
         
         console.log(`Clicked at pixel (${pixelX.toFixed(0)}, ${pixelY.toFixed(0)}) -> Coordinates: ${latitude.toFixed(2)}°S, ${Math.abs(longitude).toFixed(2)}°W`);
     });
     
-    function pixelToCoordinatesAzimuthal(px, py, config) {
+    function pixelToCoordinatesLambertAzimuthal(px, py, config) {
+        // Lambert Azimuthal Equal-Area Projection (South Pole centered)
         // Translate pixel coordinates relative to projection center
         const dx = px - config.centerPixelX;
         const dy = py - config.centerPixelY;
         
         // Convert to polar coordinates (distance and azimuth)
-        const distance = Math.sqrt(dx * dx + dy * dy);
+        const rho = Math.sqrt(dx * dx + dy * dy);
         let azimuth = Math.atan2(dx, -dy) * 180 / Math.PI;  // Azimuth in degrees, 0 = North
         
         // Apply map orientation
         azimuth = (azimuth + config.orientation) % 360;
         if (azimuth < 0) azimuth += 360;
         
-        // Angular distance from the pole (in degrees)
-        const angularDistance = distance / config.scale;
+        // Lambert Azimuthal Equal-Area inverse formulas (South Pole centered)
+        // c is the angular distance from the pole
+        const c = 2 * Math.asin(rho / (config.scale * 2 * Math.sqrt(2))) * 180 / Math.PI;
         
-        // Calculate latitude (distance from south pole)
+        // Calculate latitude (distance from south pole toward equator)
         // South pole is at -90°, and we move north as we move away from center
-        const latitude = -90 + angularDistance;
+        const latitude = -90 + c;
         
         // Calculate longitude from azimuth
         // Azimuth 0° = North, 90° = East, 180° = South, 270° = West
