@@ -21,7 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const pixelY = event.clientY - rect.top;
         
         // Convert pixel coordinates to geographic coordinates using Lambert Azimuthal Equal-Area projection
-        const { longitude, latitude } = pixelToCoordinatesLambertAzimuthal(pixelX, pixelY, mapConfig);
+        const { longitude, latitude, rho, c } = pixelToCoordinatesLambertAzimuthal(pixelX, pixelY, mapConfig);
+        
+        if (isNaN(latitude)) {
+            console.warn(`NaN result - scale may need calibration. Pixel distance from center: ${rho.toFixed(2)}`);
+        }
         
         console.log(`Clicked at pixel (${pixelX.toFixed(0)}, ${pixelY.toFixed(0)}) -> Coordinates: ${latitude.toFixed(2)}°S, ${Math.abs(longitude).toFixed(2)}°W`);
     });
@@ -42,7 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Lambert Azimuthal Equal-Area inverse formulas (South Pole centered)
         // c is the angular distance from the pole
-        const c = 2 * Math.asin(rho / (config.scale * 2 * Math.sqrt(2))) * 180 / Math.PI;
+        const asinArg = rho / (config.scale * 2 * Math.sqrt(2));
+        
+        // Clamp to [-1, 1] to prevent NaN from asin
+        const clampedArg = Math.max(-1, Math.min(1, asinArg));
+        const c = 2 * Math.asin(clampedArg) * 180 / Math.PI;
         
         // Calculate latitude (distance from south pole toward equator)
         // South pole is at -90°, and we move north as we move away from center
@@ -54,7 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         return { 
             longitude: longitude, 
-            latitude: latitude 
+            latitude: latitude,
+            rho: rho,
+            c: c
         };
     }
 });
