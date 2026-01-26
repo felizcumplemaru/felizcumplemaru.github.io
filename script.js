@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Azimuthal Equidistant Projection centered at South Pole
     // Calibrate these values by identifying the map center and scale
     const mapConfig = {
-        centerPixelX: 0,        // Pixel X coordinate of the projection center (south pole)
-        centerPixelY: 0,        // Pixel Y coordinate of the projection center (south pole)
+        centerPixelX: 366,        // Pixel X coordinate of the projection center (south pole)
+        centerPixelY: 2615,        // Pixel Y coordinate of the projection center (south pole)
         scale: 1,              // Pixels per degree of angular distance from pole
         orientation: 0         // Rotation angle in degrees (0 = north up, adjust if needed)
     };
