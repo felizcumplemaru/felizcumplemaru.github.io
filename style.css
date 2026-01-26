@@ -140,3 +140,7 @@ h1, h2, h3 {
   object-fit: cover;
   border-radius: 2%;
 }
+
+.body {
+  display: flex;
+}

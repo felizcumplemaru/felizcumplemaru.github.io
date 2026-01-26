@@ -3,16 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!mapImage) return;
     
-    // Define reference points: pixel coordinates mapped to geographic coordinates
-    // These are calibrated based on the visible map markings (60°W, 70°W, 30°S, 40°S, 50°S)
-    const referencePoints = [
-        // Format: { pixelX, pixelY, longitude, latitude }
-        // These values should be calibrated based on your specific map image
-        { pixelX: 50, pixelY: 30, longitude: -73.5, latitude: -23 },      // Top-left area
-        { pixelX: 350, pixelY: 30, longitude: -54, latitude: -23 },       // Top-right area
-        { pixelX: 50, pixelY: 350, longitude: -73.5, latitude: -56 },     // Bottom-left area
-        { pixelX: 350, pixelY: 350, longitude: -54, latitude: -56 }       // Bottom-right area
-    ];
+    // Azimuthal Equidistant Projection centered at South Pole
+    // Calibrate these values by identifying the map center and scale
+    const mapConfig = {
+        centerPixelX: 0,        // Pixel X coordinate of the projection center (south pole)
+        centerPixelY: 0,        // Pixel Y coordinate of the projection center (south pole)
+        scale: 1,              // Pixels per degree of angular distance from pole
+        orientation: 0         // Rotation angle in degrees (0 = north up, adjust if needed)
+    };
     
     mapImage.addEventListener('click', function(event) {
         // Get the image's bounding rectangle
@@ -22,42 +20,39 @@ document.addEventListener('DOMContentLoaded', function() {
         const pixelX = event.clientX - rect.left;
         const pixelY = event.clientY - rect.top;
         
-        // Convert pixel coordinates to geographic coordinates using bilinear interpolation
-        const { longitude, latitude } = pixelToCoordinates(pixelX, pixelY, referencePoints);
+        // Convert pixel coordinates to geographic coordinates using azimuthal equidistant projection
+        const { longitude, latitude } = pixelToCoordinatesAzimuthal(pixelX, pixelY, mapConfig);
         
-        console.log(`Clicked at pixel (${pixelX.toFixed(0)}, ${pixelY.toFixed(0)}) -> Coordinates: ${latitude.toFixed(2)}°S, ${longitude.toFixed(2)}°W`);
+        console.log(`Clicked at pixel (${pixelX.toFixed(0)}, ${pixelY.toFixed(0)}) -> Coordinates: ${latitude.toFixed(2)}°S, ${Math.abs(longitude).toFixed(2)}°W`);
     });
     
-    function pixelToCoordinates(px, py, refPoints) {
-        // Simple bilinear interpolation
-        const topLeft = refPoints[0];
-        const topRight = refPoints[1];
-        const bottomLeft = refPoints[2];
-        const bottomRight = refPoints[3];
+    function pixelToCoordinatesAzimuthal(px, py, config) {
+        // Translate pixel coordinates relative to projection center
+        const dx = px - config.centerPixelX;
+        const dy = py - config.centerPixelY;
         
-        const imgWidth = topRight.pixelX - topLeft.pixelX;
-        const imgHeight = bottomLeft.pixelY - topLeft.pixelY;
+        // Convert to polar coordinates (distance and azimuth)
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        let azimuth = Math.atan2(dx, -dy) * 180 / Math.PI;  // Azimuth in degrees, 0 = North
         
-        const t = (px - topLeft.pixelX) / imgWidth;
-        const s = (py - topLeft.pixelY) / imgHeight;
+        // Apply map orientation
+        azimuth = (azimuth + config.orientation) % 360;
+        if (azimuth < 0) azimuth += 360;
         
-        // Clamp values between 0 and 1
-        const t_clamped = Math.max(0, Math.min(1, t));
-        const s_clamped = Math.max(0, Math.min(1, s));
+        // Angular distance from the pole (in degrees)
+        const angularDistance = distance / config.scale;
         
-        // Bilinear interpolation
-        const longitude = 
-            topLeft.longitude * (1 - t_clamped) * (1 - s_clamped) +
-            topRight.longitude * t_clamped * (1 - s_clamped) +
-            bottomLeft.longitude * (1 - t_clamped) * s_clamped +
-            bottomRight.longitude * t_clamped * s_clamped;
+        // Calculate latitude (distance from south pole)
+        // South pole is at -90°, and we move north as we move away from center
+        const latitude = -90 + angularDistance;
         
-        const latitude = 
-            topLeft.latitude * (1 - t_clamped) * (1 - s_clamped) +
-            topRight.latitude * t_clamped * (1 - s_clamped) +
-            bottomLeft.latitude * (1 - t_clamped) * s_clamped +
-            bottomRight.latitude * t_clamped * s_clamped;
+        // Calculate longitude from azimuth
+        // Azimuth 0° = North, 90° = East, 180° = South, 270° = West
+        const longitude = azimuth - 180;  // Adjust so 0° is at bottom/north
         
-        return { longitude: Math.abs(longitude), latitude: Math.abs(latitude) };
+        return { 
+            longitude: longitude, 
+            latitude: latitude 
+        };
     }
 });
