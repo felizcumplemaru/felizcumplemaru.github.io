@@ -148,3 +148,11 @@ function pixelToCoordinatesLambertAzimuthal(px, py, config) {
         azimuth: azimuth
     };
 }
+
+function getMapScale(mapImage, config) {
+    const displayedWidth = mapImage.offsetWidth;
+    const displayedHeight = mapImage.offsetHeight;
+    const scaleX = actualImageWidth / displayedWidth;
+    const scaleY = actualImageHeight / displayedHeight;
+    return { scaleX, scaleY };
+}

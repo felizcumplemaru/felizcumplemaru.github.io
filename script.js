@@ -51,16 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
             actualImageWidth = mapImage.offsetWidth;
             actualImageHeight = mapImage.offsetHeight;
         }
+        const { scaleX, scaleY } = getMapScale(mapImage, mapConfig);
         
-        // Browser-displayed dimensions
-        const displayedWidth = mapImage.offsetWidth;
-        const displayedHeight = mapImage.offsetHeight;
-        
-        // Calculate scale factors
-        const scaleX = actualImageWidth / displayedWidth;
-        const scaleY = actualImageHeight / displayedHeight;
-        
-        console.log(`Image loaded - Actual: ${actualImageWidth}x${actualImageHeight}, Displayed: ${displayedWidth}x${displayedHeight}, Scale: ${scaleX.toFixed(3)}x${scaleY.toFixed(3)}`);
+        console.log(`Image loaded - Actual: ${actualImageWidth}x${actualImageHeight}, Displayed: ${mapImage.offsetWidth}x${mapImage.offsetHeight}, Scale: ${scaleX.toFixed(3)}x${scaleY.toFixed(3)}`);
         
         
         mapImage.addEventListener('click', function(event) {
@@ -108,11 +101,15 @@ function getClue() {
 }
 
 function guess() {
+    const { scaleX, scaleY } = getMapScale(mapImage, mapConfig);
     const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lon'], clues['lat'], mapConfig);
     const mapImage = document.querySelector('.map-container img');
     const marker = document.createElement("div");
     marker.className = "marker marker-answer";
-    marker.style.left = `${pixelCoords.actualPixelX - marker.offsetWidth / 2}px`;
-    marker.style.top = `${pixelCoords.actualPixelY - marker.offsetHeight / 2}px`;
+
+    const realPixelX = pixelCoords.actualPixelX / scaleX;
+    const realPixelY = pixelCoords.actualPixelY / scaleY;
+    marker.style.left = `${realPixelX - marker.offsetWidth / 2}px`;
+    marker.style.top = `${realPixelY - marker.offsetHeight / 2}px`;
     mapImage.parentNode.appendChild(marker);
 }
