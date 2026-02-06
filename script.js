@@ -1,3 +1,11 @@
+const clues = {
+    "clue-1": "Vista Flores",
+    "clue-2": "Tunuyán",
+    "clue-3": "Mendoza"
+}
+
+let clueIndex = 1;
+
 document.addEventListener('DOMContentLoaded', function() {
     const mapImage = document.querySelector('.map-container img');
     
@@ -228,3 +236,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+function getClue() {
+    if (clueIndex > 3) return;
+    
+    const clueElement = document.getElementById(`clue-${clueIndex}`);
+    if (clueElement) {
+        clueElement.textContent = clues[`clue-${clueIndex}`];
+        clueIndex++;
+        document.getElementById("clue").textContent = `${clueIndex-1}/3`;
+    }
+}
