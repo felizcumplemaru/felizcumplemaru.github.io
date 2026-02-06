@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (existingMarker) {
                 existingMarker.remove();
             }
-            const marker = new document.createElement("div");
+            const marker = document.createElement("div");
             marker.className = "marker marker-guess";
             marker.style.left = `${event.clientX - rect.left - marker.offsetWidth / 2}px`;
             marker.style.top = `${event.clientY - rect.top - marker.offsetHeight / 2}px`;
@@ -110,7 +110,7 @@ function getClue() {
 function guess() {
     const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lon'], clues['lat'], mapConfig);
     const mapImage = document.querySelector('.map-container img');
-    const marker = new document.createElement("div");
+    const marker = document.createElement("div");
     marker.className = "marker marker-answer";
     marker.style.left = `${pixelCoords.actualPixelX - marker.offsetWidth / 2}px`;
     marker.style.top = `${pixelCoords.actualPixelY - marker.offsetHeight / 2}px`;
