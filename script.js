@@ -82,6 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             console.log(`Browser pixel: (${browserPixelX.toFixed(0)}, ${browserPixelY.toFixed(0)}) -> Actual pixel: (${actualPixelX.toFixed(0)}, ${actualPixelY.toFixed(0)}) -> Coordinates: ${latitude.toFixed(2)}°S, ${Math.abs(longitude).toFixed(2)}°W`);
+            const marker = document.querySelector('.marker');
+            if (marker) {
+                marker.style.left = `${event.clientX - rect.left - marker.offsetWidth / 2}px`;
+                marker.style.top = `${event.clientY - rect.top - marker.offsetHeight / 2}px`;
+            }
         });
         
         // Inverse projection: convert coordinates to actual image pixel coordinates
@@ -243,7 +248,7 @@ function getClue() {
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     if (clueElement) {
         clueElement.textContent = clues[`clue-${clueIndex}`];
-        clueIndex++;
         document.getElementById("clue").textContent = `${clueIndex-1}/3`;
+        clueIndex++;
     }
 }

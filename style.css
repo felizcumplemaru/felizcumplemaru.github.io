@@ -151,4 +151,5 @@ h1, h2, h3 {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(12px);
   border-top: 1px solid #38444d;
+  padding-bottom: 30px;
 }
