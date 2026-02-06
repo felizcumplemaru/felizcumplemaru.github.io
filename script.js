@@ -94,7 +94,7 @@ function getClue() {
 function guess() {
     const mapImage = document.querySelector('.map-container img');
     const { scaleX, scaleY } = getMapScale(mapImage);
-    const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lon'], clues['lat'], mapConfig);
+    const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lat'], clues['lon'], mapConfig);
     const marker = document.createElement("div");
     marker.className = "marker marker-answer";
 
