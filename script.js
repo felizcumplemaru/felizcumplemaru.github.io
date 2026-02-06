@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get actual image dimensions
         const { scaleX, scaleY } = getMapScale(mapImage);
         
-        console.log(`Image loaded - Actual: ${actualImageWidth}x${actualImageHeight}, Displayed: ${mapImage.offsetWidth}x${mapImage.offsetHeight}, Scale: ${scaleX.toFixed(3)}x${scaleY.toFixed(3)}`);
+        console.log(`Image loaded - Actual: ${mapImage.naturalWidth}x${mapImage.naturalHeight}, Displayed: ${mapImage.offsetWidth}x${mapImage.offsetHeight}, Scale: ${scaleX.toFixed(3)}x${scaleY.toFixed(3)}`);
         
         
         mapImage.addEventListener('click', function(event) {
