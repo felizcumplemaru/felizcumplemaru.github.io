@@ -133,6 +133,7 @@ h1, h2, h3 {
 .map-container {
   height: 75vh;
   margin: 30px;
+  position: relative;
 }
 
 .map-container img {
@@ -141,9 +142,29 @@ h1, h2, h3 {
   border-radius: 2%;
 }
 
+.marker {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.marker-guess {
+  border-color: red;
+}
+
+.marker-answer {
+  border-color: green;
+}
+
 .body {
   display: flex;
 }
+
 .footer {
   position: fixed;
   bottom: 0;
