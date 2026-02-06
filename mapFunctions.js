@@ -149,7 +149,16 @@ function pixelToCoordinatesLambertAzimuthal(px, py, config) {
     };
 }
 
-function getMapScale(mapImage, config) {
+function getMapScale(mapImage) {
+    let actualImageWidth = mapImage.naturalWidth;
+    let actualImageHeight = mapImage.naturalHeight;
+    
+    // Fallback if naturalWidth is not available
+    if (!actualImageWidth || !actualImageHeight) {
+        console.warn('naturalWidth/naturalHeight not available, using offsetWidth/offsetHeight');
+        actualImageWidth = mapImage.offsetWidth;
+        actualImageHeight = mapImage.offsetHeight;
+    }
     const displayedWidth = mapImage.offsetWidth;
     const displayedHeight = mapImage.offsetHeight;
     const scaleX = actualImageWidth / displayedWidth;

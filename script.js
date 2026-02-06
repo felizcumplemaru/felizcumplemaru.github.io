@@ -42,16 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function initializeMap() {
         // Get actual image dimensions
-        let actualImageWidth = mapImage.naturalWidth;
-        let actualImageHeight = mapImage.naturalHeight;
-        
-        // Fallback if naturalWidth is not available
-        if (!actualImageWidth || !actualImageHeight) {
-            console.warn('naturalWidth/naturalHeight not available, using offsetWidth/offsetHeight');
-            actualImageWidth = mapImage.offsetWidth;
-            actualImageHeight = mapImage.offsetHeight;
-        }
-        const { scaleX, scaleY } = getMapScale(mapImage, mapConfig);
+        const { scaleX, scaleY } = getMapScale(mapImage);
         
         console.log(`Image loaded - Actual: ${actualImageWidth}x${actualImageHeight}, Displayed: ${mapImage.offsetWidth}x${mapImage.offsetHeight}, Scale: ${scaleX.toFixed(3)}x${scaleY.toFixed(3)}`);
         
@@ -101,9 +92,9 @@ function getClue() {
 }
 
 function guess() {
-    const { scaleX, scaleY } = getMapScale(mapImage, mapConfig);
-    const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lon'], clues['lat'], mapConfig);
     const mapImage = document.querySelector('.map-container img');
+    const { scaleX, scaleY } = getMapScale(mapImage);
+    const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lon'], clues['lat'], mapConfig);
     const marker = document.createElement("div");
     marker.className = "marker marker-answer";
 
