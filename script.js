@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             const marker = document.createElement("div");
             marker.className = "marker marker-guess";
-            marker.style.left = `${event.clientX - rect.left - marker.offsetWidth / 2}px`;
-            marker.style.top = `${event.clientY - rect.top - marker.offsetHeight / 2}px`;
+            marker.style.left = `${event.clientX - rect.left}px`;
+            marker.style.top = `${event.clientY - rect.top}px`;
             mapImage.parentNode.appendChild(marker);
             const guessButton = document.getElementById("guess-button");
             if (guessButton) {
@@ -116,10 +116,8 @@ function guess() {
 
     const realPixelX = pixelCoords.actualPixelX / scaleX;
     const realPixelY = pixelCoords.actualPixelY / scaleY;
-    const resultingPixelX = realPixelX - marker.offsetWidth / 2;
-    const resultingPixelY = realPixelY - marker.offsetHeight / 2;
-    marker.style.left = `${resultingPixelX}px`;
-    marker.style.top = `${resultingPixelY}px`;
+    marker.style.left = `${realPixelX}px`;
+    marker.style.top = `${realPixelY}px`;
     mapImage.parentNode.appendChild(marker);
 
     const guessMarker = document.querySelector('.marker-guess');
@@ -131,5 +129,4 @@ function guess() {
     } else {
         console.warn('No guess marker found to draw line from.');
     }
-    drawLine(realPixelX, realPixelY, guessPixelX, guessPixelY);
 }
