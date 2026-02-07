@@ -76,6 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
             marker.style.left = `${event.clientX - rect.left - marker.offsetWidth / 2}px`;
             marker.style.top = `${event.clientY - rect.top - marker.offsetHeight / 2}px`;
             mapImage.parentNode.appendChild(marker);
+            const guessButton = document.getElementById("guess-button");
+            if (guessButton) {
+                guessButton.disabled = false;
+            }
         });
     }
 });
@@ -85,10 +89,22 @@ function getClue() {
     
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     if (clueElement) {
-        clueElement.textContent = clues[`clue-${clueIndex}`];
         document.getElementById("clue").textContent = `${clueIndex-1}/3`;
         clueIndex++;
+        clueElement.textContent = clues[`clue-${clueIndex}`];
     }
+}
+
+function drawLine(x1, y1, x2, y2) {
+    const svg = document.querySelector('.map-container svg');
+    if (!svg) return;
+    
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line.setAttribute("x1", x1);
+    line.setAttribute("y1", y1);
+    line.setAttribute("x2", x2);
+    line.setAttribute("y2", y2);
+    svg.appendChild(line);
 }
 
 function guess() {
@@ -100,7 +116,20 @@ function guess() {
 
     const realPixelX = pixelCoords.actualPixelX / scaleX;
     const realPixelY = pixelCoords.actualPixelY / scaleY;
-    marker.style.left = `${realPixelX - marker.offsetWidth / 2}px`;
-    marker.style.top = `${realPixelY - marker.offsetHeight / 2}px`;
+    const resultingPixelX = realPixelX - marker.offsetWidth / 2;
+    const resultingPixelY = realPixelY - marker.offsetHeight / 2;
+    marker.style.left = `${resultingPixelX}px`;
+    marker.style.top = `${resultingPixelY}px`;
     mapImage.parentNode.appendChild(marker);
+
+    const guessMarker = document.querySelector('.marker-guess');
+    if (guessMarker) {
+        const guessRect = guessMarker.getBoundingClientRect();
+        const guessPixelX = guessRect.left + guessRect.width / 2 - mapImage.getBoundingClientRect().left;
+        const guessPixelY = guessRect.top + guessRect.height / 2 - mapImage.getBoundingClientRect().top;
+        drawLine(guessPixelX, guessPixelY, realPixelX, realPixelY);
+    } else {
+        console.warn('No guess marker found to draw line from.');
+    }
+    drawLine(realPixelX, realPixelY, guessPixelX, guessPixelY);
 }
