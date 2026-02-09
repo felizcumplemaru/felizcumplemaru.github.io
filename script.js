@@ -48,6 +48,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
         mapImage.addEventListener('click', function(event) {
+            const answerMarker = document.querySelector('.marker-answer');
+            if (answerMarker) {
+                console.warn('The answer has already been revealed. No further guesses allowed.');
+                return;
+            }
             // Get the image's bounding rectangle
             const rect = mapImage.getBoundingClientRect();
             
@@ -88,10 +93,11 @@ function getClue() {
     if (clueIndex > 3) return;
     
     const clueElement = document.getElementById(`clue-${clueIndex}`);
+    const clueValue = clues[`clue-${clueIndex}`];
     if (clueElement) {
-        document.getElementById("clue").textContent = `${clueIndex-1}/3`;
+        document.getElementById("clue").textContent = `${clueIndex}/3`;
+        clueElement.textContent = clueValue;
         clueIndex++;
-        clueElement.textContent = clues[`clue-${clueIndex}`];
     }
 }
 
@@ -105,6 +111,18 @@ function drawLine(x1, y1, x2, y2) {
     line.setAttribute("x2", x2);
     line.setAttribute("y2", y2);
     svg.appendChild(line);
+}
+
+function haversineDistanceKm(lat1, lon1, lat2, lon2) {
+    const toRad = deg => deg * Math.PI / 180;
+    const R = 6371; // Earth's radius in km
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+              Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
 }
 
 function guess() {
