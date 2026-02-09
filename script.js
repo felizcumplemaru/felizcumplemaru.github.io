@@ -22,6 +22,8 @@ const mapConfig = {
 };
 
 let clueIndex = 1;
+let guessLat = 0;
+let guessLon = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     const mapImage = document.querySelector('.map-container img');
@@ -85,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (guessButton) {
                 guessButton.disabled = false;
             }
+
+            guessLat = latitude;
+            guessLon = longitude;
         });
     }
 });
@@ -95,9 +100,9 @@ function getClue() {
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     const clueValue = clues[`clue-${clueIndex}`];
     if (clueElement) {
+        clueIndex++;
         document.getElementById("clue").textContent = `${clueIndex}/3`;
         clueElement.textContent = clueValue;
-        clueIndex++;
     }
 }
 
@@ -147,4 +152,9 @@ function guess() {
     } else {
         console.warn('No guess marker found to draw line from.');
     }
+}
+
+function showAnswer() {
+    let distance = haversineDistanceKm(guessLat, guessLon, clues['lat'], clues['lon']);
+    alert(`La respuesta es: ${clues['lat']}°S, ${Math.abs(clues['lon'])}°W\nTu distancia al objetivo es: ${distance.toFixed(2)} km`);
 }
