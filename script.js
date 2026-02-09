@@ -95,12 +95,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function getClue() {
-    if (clueIndex > 3) return;
-    
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     const clueValue = clues[`clue-${clueIndex}`];
     if (clueElement) {
         clueIndex++;
+        if (clueIndex > 3) return;
         document.getElementById("clue").textContent = `${clueIndex}/3`;
         clueElement.textContent = clueValue;
     }
@@ -152,6 +151,8 @@ function guess() {
     } else {
         console.warn('No guess marker found to draw line from.');
     }
+
+    showAnswer();
 }
 
 function showAnswer() {
