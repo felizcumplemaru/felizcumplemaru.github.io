@@ -69,16 +69,19 @@ input[type="text"]:focus, textarea:focus {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(12px);
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .tweet {
   border: 1px solid #38444d;
   padding: 16px;
   transition: background-color 0.2s;
-  margin: 30px;
+  margin: 20px;
   border-radius: 20px;
-  height: 73vh;
-  width: 73vh;
+  height: 70vh;
+  width: 70vh;
+  max-width: 90vw;
   display: flex;
   gap: 16px;
   font-size: 15px;
@@ -118,7 +121,7 @@ h1, h2, h3 {
     border-radius: 2%;
     border: .5px solid #38444d;
     width: 100%;
-    height: auto;
+    height: 100%;
     flex-grow: 1;
     object-fit: cover;
     padding: 2px
@@ -130,8 +133,10 @@ h1, h2, h3 {
 }
 
 .map-container {
-  height: 73vh;
-  margin: 30px;
+  height: 70vh;
+  width: 70vh;
+  max-width: 90vw;
+  margin: 20px;
   position: relative;
 }
 
@@ -180,6 +185,10 @@ h1, h2, h3 {
 
 .body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
 }
 
 .footer {

@@ -26,7 +26,7 @@ let guessLat = 0;
 let guessLon = 0;
 
 document.addEventListener('DOMContentLoaded', async function() {
-    const index = Math.floor(Math.random() * 156);
+    const index = Math.floor(Math.random() * 155);
     console.log(`Selected tweet index: ${index}`);
     const response = await fetch("tweets.json");
     const tweets = await response.json();
@@ -113,6 +113,7 @@ function getClue() {
     const clueValue = clues[`clue-${clueIndex}`];
     if (clueElement) {
         clueIndex++;
+        if (clueIndex > 3) return;
         document.getElementById("clue").textContent = `${clueIndex}/3`;
         clueElement.textContent = clueValue;
     }
