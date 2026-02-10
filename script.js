@@ -111,12 +111,9 @@ function getClue() {
     if (clueIndex > 3) return;
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     const clueValue = clues[`clue-${clueIndex}`];
-    if (clueElement) {
-        clueIndex++;
-        if (clueIndex > 3) return;
-        document.getElementById("clue").textContent = `${clueIndex}/3`;
-        clueElement.textContent = clueValue;
-    }
+    document.getElementById("clue").textContent = `${clueIndex}/3`;
+    clueElement.textContent = clueValue;
+    clueIndex++;
 }
 
 function drawLine(x1, y1, x2, y2) {
