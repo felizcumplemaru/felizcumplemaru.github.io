@@ -206,8 +206,8 @@ h1, h2, h3 {
 }
 
 .footer-content {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   display: flex;
 }
 
@@ -270,6 +270,10 @@ h1, h2, h3 {
     width: 70vh;
     height: 70vh;
   }
+
+  .profile-col span {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -304,13 +308,20 @@ h1, h2, h3 {
 
   .profile-col {
     width: 5%;
+    height: 30px;
   }
 
   .profile {
     width: 150%;
   }
 
+  .content-col span {
+    display: none;
+  }
+
   .footer-content {
+    padding-top: 7px;
+    padding-bottom: 10px;
     flex-direction: column;
     gap: 10px;
   }
@@ -318,5 +329,7 @@ h1, h2, h3 {
   .tweet {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
