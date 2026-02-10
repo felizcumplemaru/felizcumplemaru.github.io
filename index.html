@@ -43,9 +43,11 @@
     <div class="footer">
         <div class="footer-content">
             <span>¿Dónde está esta localidad?</span>
-            <button onclick="getClue()">Pista <span id="clue">1/3</span></button>
-            <button onclick="await guess()" id="guess-button" disabled>Adivinar</button>
-            <button onclick="newTweet()">Otro!</button>
+            <div id="footer-buttons" style="display: flex; align-items: center;">
+                <button onclick="getClue()">Pista <span id="clue">1/3</span></button>
+                <button onclick="guess()" id="guess-button" disabled>Adivinar</button>
+                <button onclick="newTweet()">Otro!</button>
+            </div>
         </div>
     </div>
 </body>

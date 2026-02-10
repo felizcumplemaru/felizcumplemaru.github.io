@@ -73,6 +73,7 @@ input[type="text"]:focus, textarea:focus {
   align-items: center;
   gap: 20px;
   justify-content: center;
+  z-index: 5;
 }
 
 .tweet {
@@ -204,10 +205,10 @@ h1, h2, h3 {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(12px);
   border-top: 1px solid #38444d;
-  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 
 .footer-content {
@@ -215,8 +216,48 @@ h1, h2, h3 {
   padding-bottom: 30px;
 }
 
+#footer-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#footer-buttons button {
+  margin-left: 20px;
+}
+
 .logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+
+@media (min-width: 1200px) {
+  .body div {
+    flex-direction: row;
+  }
+
+  .header {
+    font-size: 15px;
+  }
+
+  .footer {
+    display: flex;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .body div {
+    flex-direction: column;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .footer {
+    font-size: 20px;
+  }
 }

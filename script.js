@@ -165,7 +165,7 @@ async function guess() {
     getClue();
     getClue();
     getClue();
-    await new Promise(r => setTimeout(r, 200));
+    await new Promise(r => setTimeout(r, 100));
     showAnswer();
 }
 
