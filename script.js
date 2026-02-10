@@ -21,7 +21,7 @@ const mapConfig = {
     orientation: 0
 };
 
-let clueIndex = 0;
+let clueIndex = 1;
 let guessLat = 0;
 let guessLon = 0;
 
@@ -108,8 +108,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 function getClue() {
-    console.log(`Current clue index: ${clueIndex}`);
-    if (clueIndex > 2) return;
+    if (clueIndex > 3) return;
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     const clueValue = clues[`clue-${clueIndex}`];
     if (clueElement) {
