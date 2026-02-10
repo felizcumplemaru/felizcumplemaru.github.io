@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', async function() {
     clues['clue-1'] = tweet.ciudad;
     clues['clue-2'] = tweet.departamento;
     clues['clue-3'] = tweet.provincia;
-    document.getElementById("tweet").textContent = tweet.text;
-    const mapContainer = document.querySelector('.map-container');
-    const mapImage = document.createElement("img");
-    mapImage.src = tweet.newSrc;
-    mapContainer.appendChild(mapImage);
+    const tweetContainer = document.querySelector('.content-col');
+    const imageElement = document.createElement('img');
+    imageElement.src = tweet.newSrc;
+    tweetContainer.appendChild(imageElement);
     
+    const mapImage = document.querySelector(".map-container img");
     // Wait for image to load to get dimensions
     if (mapImage.complete) {
         // Image already loaded (cached)
