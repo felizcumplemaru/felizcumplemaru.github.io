@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const tweetContainer = document.querySelector('.content-col');
     const imageElement = document.createElement('img');
     imageElement.src = tweet.newSrc;
+    imageElement.classList.add('content-img');
     tweetContainer.appendChild(imageElement);
     
     const mapImage = document.querySelector(".map-container img");
@@ -107,6 +108,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 function getClue() {
+    console.log(`Current clue index: ${clueIndex}`);
     if (clueIndex > 2) return;
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     const clueValue = clues[`clue-${clueIndex}`];
