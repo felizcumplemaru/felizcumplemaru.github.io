@@ -79,7 +79,7 @@ input[type="text"]:focus, textarea:focus {
   border: 1px solid #38444d;
   padding: 16px;
   transition: background-color 0.2s;
-  margin: 0;
+  margin: 15px;
   border-radius: 20px;
   height: 70vh;
   width: 70vh;
@@ -136,9 +136,9 @@ h1, h2, h3 {
 
 .map-container {
   height: 70vh;
-  width: 70vh;
+  width: auto;
   max-width: 90vw;
-  margin: 0;
+  margin: 15px;
   position: relative;
 }
 
@@ -194,6 +194,7 @@ h1, h2, h3 {
   gap: 20px;
   width: 100%;
   min-height: calc(100vh - 200px);
+  padding: 20px;
 }
 
 .footer {

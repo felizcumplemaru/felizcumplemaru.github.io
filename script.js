@@ -26,7 +26,7 @@ let guessLat = 0;
 let guessLon = 0;
 
 document.addEventListener('DOMContentLoaded', async function() {
-    const index = Math.floor(Math.random() * 155);
+    const index = Math.floor(Math.random() * 397);
     console.log(`Selected tweet index: ${index}`);
     const response = await fetch("tweets.json");
     const tweets = await response.json();
@@ -162,7 +162,9 @@ function guess() {
     } else {
         console.warn('No guess marker found to draw line from.');
     }
-
+    getClue();
+    getClue();
+    getClue();
     showAnswer();
 }
 
