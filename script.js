@@ -140,7 +140,7 @@ function haversineDistanceKm(lat1, lon1, lat2, lon2) {
     return R * c;
 }
 
-function guess() {
+async function guess() {
     const mapImage = document.querySelector('.map-container img');
     const { scaleX, scaleY } = getMapScale(mapImage);
     const pixelCoords = coordinatesToPixelLambertAzimuthal(clues['lat'], clues['lon'], mapConfig);
@@ -165,10 +165,15 @@ function guess() {
     getClue();
     getClue();
     getClue();
+    await new Promise(r => setTimeout(r, 200));
     showAnswer();
 }
 
 function showAnswer() {
     let distance = haversineDistanceKm(guessLat, guessLon, clues['lat'], clues['lon']);
     alert(`La respuesta es: ${clues['lat']}°S, ${Math.abs(clues['lon'])}°W\nTu distancia al objetivo es: ${distance.toFixed(2)} km`);
+}
+
+function newTweet() {
+    location.reload();
 }
