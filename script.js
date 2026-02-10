@@ -110,9 +110,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 function getClue() {
     if (clueIndex > 3) return;
     const clueElement = document.getElementById(`clue-${clueIndex}`);
+    const clueElementBis = document.getElementById(`clue-${clueIndex}-bis`);
     const clueValue = clues[`clue-${clueIndex}`];
     document.getElementById("clue").textContent = `${clueIndex}/3`;
     clueElement.textContent = clueValue;
+    clueElementBis.textContent = clueValue;
     clueIndex++;
 }
 
