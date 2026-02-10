@@ -5,7 +5,9 @@
         "departamento": "Tunuyán",
         "provincia": "Mendoza",
         "newSrc": "/img/tweets/G-aQ9IHW4AA3PPN.jpg",
-        "imgId": "G-aQ9IHW4AA3PPN"
+        "imgId": "G-aQ9IHW4AA3PPN",
+        "lat": -33.650876,
+        "lon": -69.15576
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Z2yvrW8AAZU7V?format=jpg&name=small",
@@ -13,7 +15,9 @@
         "departamento": "Diamante",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G-Z2yvrW8AAZU7V.jpg",
-        "imgId": "G-Z2yvrW8AAZU7V"
+        "imgId": "G-Z2yvrW8AAZU7V",
+        "lat": -31.865188,
+        "lon": -60.57469
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-ZayosWYAAFbDd?format=jpg&name=small",
@@ -21,7 +25,9 @@
         "departamento": "Chicoana",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G-ZayosWYAAFbDd.jpg",
-        "imgId": "G-ZayosWYAAFbDd"
+        "imgId": "G-ZayosWYAAFbDd",
+        "lat": -25.037119,
+        "lon": -65.572163
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Y-V5vXAAA9CGw?format=jpg&name=small",
@@ -29,7 +35,9 @@
         "departamento": "Leales",
         "provincia": "Tucumán",
         "newSrc": "/img/tweets/G-Y-V5vXAAA9CGw.jpg",
-        "imgId": "G-Y-V5vXAAA9CGw"
+        "imgId": "G-Y-V5vXAAA9CGw",
+        "lat": -27.032792,
+        "lon": -65.30709
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-YoKImaoAAWC-0?format=jpg&name=small",
@@ -37,7 +45,9 @@
         "departamento": "Rosario de la Frontera",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G-YoKImaoAAWC-0.jpg",
-        "imgId": "G-YoKImaoAAWC-0"
+        "imgId": "G-YoKImaoAAWC-0",
+        "lat": -26.011265,
+        "lon": -64.671151
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-YHvhCXMAAsEmb?format=jpg&name=small",
@@ -45,7 +55,9 @@
         "departamento": "Confluencia",
         "provincia": "Neuquén",
         "newSrc": "/img/tweets/G-YHvhCXMAAsEmb.jpg",
-        "imgId": "G-YHvhCXMAAsEmb"
+        "imgId": "G-YHvhCXMAAsEmb",
+        "lat": -38.541358,
+        "lon": -68.54517
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-XtRnvWMAAUYLt?format=jpg&name=small",
@@ -53,7 +65,9 @@
         "departamento": "San Pedro",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G-XtRnvWMAAUYLt.jpg",
-        "imgId": "G-XtRnvWMAAUYLt"
+        "imgId": "G-XtRnvWMAAUYLt",
+        "lat": -24.104591,
+        "lon": -64.824025
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-XSsmeXsAAy5Ci?format=jpg&name=small",
@@ -61,7 +75,9 @@
         "departamento": "Capital",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G-XSsmeXsAAy5Ci.jpg",
-        "imgId": "G-XSsmeXsAAy5Ci"
+        "imgId": "G-XSsmeXsAAy5Ci",
+        "lat": -24.772448,
+        "lon": -65.492456
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-W4vTDWgAA480s?format=jpg&name=small",
@@ -69,7 +85,9 @@
         "departamento": "Bermejo",
         "provincia": "Chaco",
         "newSrc": "/img/tweets/G-W4vTDWgAA480s.jpg",
-        "imgId": "G-W4vTDWgAA480s"
+        "imgId": "G-W4vTDWgAA480s",
+        "lat": -27.291499,
+        "lon": -58.619429
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-WcHovWYAAGsb7?format=jpg&name=small",
@@ -77,7 +95,9 @@
         "departamento": "Río Cuarto",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-WcHovWYAAGsb7.jpg",
-        "imgId": "G-WcHovWYAAGsb7"
+        "imgId": "G-WcHovWYAAGsb7",
+        "lat": -33.123837,
+        "lon": -64.349003
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Viq0uWwAAbDCx?format=jpg&name=small",
@@ -85,7 +105,9 @@
         "departamento": "Castellanos",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-Viq0uWwAAbDCx.jpg",
-        "imgId": "G-Viq0uWwAAbDCx"
+        "imgId": "G-Viq0uWwAAbDCx",
+        "lat": -30.85413,
+        "lon": -61.849535
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-VHLfNbgAAD2Lx?format=jpg&name=small",
@@ -93,7 +115,9 @@
         "departamento": "Pilar",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G-VHLfNbgAAD2Lx.jpg",
-        "imgId": "G-VHLfNbgAAD2Lx"
+        "imgId": "G-VHLfNbgAAD2Lx",
+        "lat": -34.458697,
+        "lon": -58.913968
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-UtL1HaMAA90EP?format=jpg&name=small",
@@ -101,7 +125,9 @@
         "departamento": "Gualeguaychú",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G-UtL1HaMAA90EP.jpg",
-        "imgId": "G-UtL1HaMAA90EP"
+        "imgId": "G-UtL1HaMAA90EP",
+        "lat": -33.145461,
+        "lon": -59.208056
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-T0s6AXUAATMu9?format=jpg&name=small",
@@ -109,7 +135,9 @@
         "departamento": "Chascomús",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G-T0s6AXUAATMu9.jpg",
-        "imgId": "G-T0s6AXUAATMu9"
+        "imgId": "G-T0s6AXUAATMu9",
+        "lat": -35.62685,
+        "lon": -58.014629
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-UR4aDb0AEPza3?format=jpg&name=small",
@@ -117,7 +145,9 @@
         "departamento": "Chivilcoy",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G-UR4aDb0AEPza3.jpg",
-        "imgId": "G-UR4aDb0AEPza3"
+        "imgId": "G-UR4aDb0AEPza3",
+        "lat": -35.092209,
+        "lon": -59.775711
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-TeVxaWgAAPyuG?format=jpg&name=small",
@@ -125,7 +155,9 @@
         "departamento": "General Roca",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-TeVxaWgAAPyuG.jpg",
-        "imgId": "G-TeVxaWgAAPyuG"
+        "imgId": "G-TeVxaWgAAPyuG",
+        "lat": -34.341446,
+        "lon": -64.920814
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-S98uEXgAALzWR?format=jpg&name=small",
@@ -133,7 +165,9 @@
         "departamento": "General Lamadrid",
         "provincia": "La Rioja",
         "newSrc": "/img/tweets/G-S98uEXgAALzWR.jpg",
-        "imgId": "G-S98uEXgAALzWR"
+        "imgId": "G-S98uEXgAALzWR",
+        "lat": -29.020142,
+        "lon": -68.229483
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Sjt3VXMAACilo?format=jpg&name=small",
@@ -141,7 +175,9 @@
         "departamento": "El Carmen",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G-Sjt3VXMAACilo.jpg",
-        "imgId": "G-Sjt3VXMAACilo"
+        "imgId": "G-Sjt3VXMAACilo",
+        "lat": -24.463444,
+        "lon": -65.119204
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-SIq5mWEAABgo9?format=jpg&name=small",
@@ -149,7 +185,9 @@
         "departamento": "9 de Julio",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-SIq5mWEAABgo9.jpg",
-        "imgId": "G-SIq5mWEAABgo9"
+        "imgId": "G-SIq5mWEAABgo9",
+        "lat": -28.02239,
+        "lon": -61.186582
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-RtmBvW8AAJdbO?format=jpg&name=small",
@@ -157,7 +195,9 @@
         "departamento": "Bermejo",
         "provincia": "Formosa",
         "newSrc": "/img/tweets/G-RtmBvW8AAJdbO.jpg",
-        "imgId": "G-RtmBvW8AAJdbO"
+        "imgId": "G-RtmBvW8AAJdbO",
+        "lat": -23.672948,
+        "lon": -61.163608
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-RdlCyXIAI1kf9?format=jpg&name=small",
@@ -165,7 +205,9 @@
         "departamento": "Juan Martín Pueyrredón",
         "provincia": "San Luis",
         "newSrc": "/img/tweets/G-RdlCyXIAI1kf9.jpg",
-        "imgId": "G-RdlCyXIAI1kf9"
+        "imgId": "G-RdlCyXIAI1kf9",
+        "lat": -33.804981,
+        "lon": -66.415049
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-RL8GPWAAAgyvQ?format=jpg&name=small",
@@ -173,7 +215,9 @@
         "departamento": "Cochinoca",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G-RL8GPWAAAgyvQ.jpg",
-        "imgId": "G-RL8GPWAAAgyvQ"
+        "imgId": "G-RL8GPWAAAgyvQ",
+        "lat": -23.169147,
+        "lon": -65.793878
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-QZfQ8WUAA8B4f?format=jpg&name=small",
@@ -181,7 +225,9 @@
         "departamento": "Río Seco",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-QZfQ8WUAA8B4f.jpg",
-        "imgId": "G-QZfQ8WUAA8B4f"
+        "imgId": "G-QZfQ8WUAA8B4f",
+        "lat": -29.7209,
+        "lon": -63.515153
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-P-KWZbgAAND3U?format=jpg&name=small",
@@ -189,7 +235,9 @@
         "departamento": "La Plata",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G-P-KWZbgAAND3U.jpg",
-        "imgId": "G-P-KWZbgAAND3U"
+        "imgId": "G-P-KWZbgAAND3U",
+        "lat": -34.951798,
+        "lon": -57.841234
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Pkk4FWcAA2XYB?format=jpg&name=small",
@@ -197,7 +245,9 @@
         "departamento": "Mitre",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G-Pkk4FWcAA2XYB.jpg",
-        "imgId": "G-Pkk4FWcAA2XYB"
+        "imgId": "G-Pkk4FWcAA2XYB",
+        "lat": -29.413623,
+        "lon": -62.790404
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-OsigTXwAAegVO?format=jpg&name=small",
@@ -205,7 +255,9 @@
         "departamento": "Feliciano",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G-OsigTXwAAegVO.jpg",
-        "imgId": "G-OsigTXwAAegVO"
+        "imgId": "G-OsigTXwAAegVO",
+        "lat": -30.48519,
+        "lon": -59.028341
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-PJC8kWQAE72CU?format=jpg&name=small",
@@ -213,7 +265,9 @@
         "departamento": "Rawson",
         "provincia": "Chubut",
         "newSrc": "/img/tweets/G-PJC8kWQAE72CU.jpg",
-        "imgId": "G-PJC8kWQAE72CU"
+        "imgId": "G-PJC8kWQAE72CU",
+        "lat": -43.381948,
+        "lon": -65.045502
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-OX83BagAA_iBF?format=jpg&name=small",
@@ -221,7 +275,9 @@
         "departamento": "Ñorquinco",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G-OX83BagAA_iBF.jpg",
-        "imgId": "G-OX83BagAA_iBF"
+        "imgId": "G-OX83BagAA_iBF",
+        "lat": -41.556351,
+        "lon": -69.869368
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-N1gwjWMAAoMnO?format=jpg&name=small",
@@ -229,7 +285,9 @@
         "departamento": "Calamuchita",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-N1gwjWMAAoMnO.jpg",
-        "imgId": "G-N1gwjWMAAoMnO"
+        "imgId": "G-N1gwjWMAAoMnO",
+        "lat": -32.176351,
+        "lon": -64.456938
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-NAPaDWYAAyENc?format=jpg&name=small",
@@ -237,7 +295,9 @@
         "departamento": "Chivilcoy",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G-NAPaDWYAAyENc.jpg",
-        "imgId": "G-NAPaDWYAAyENc"
+        "imgId": "G-NAPaDWYAAyENc",
+        "lat": -35.087206,
+        "lon": -59.924373
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Mk6TNXcAId4QZ?format=jpg&name=small",
@@ -245,7 +305,9 @@
         "departamento": "General Güemes",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G-Mk6TNXcAId4QZ.jpg",
-        "imgId": "G-Mk6TNXcAId4QZ"
+        "imgId": "G-Mk6TNXcAId4QZ",
+        "lat": -24.682967,
+        "lon": -65.104945
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-MVWyEW4AAWbEO?format=jpg&name=small",
@@ -253,7 +315,9 @@
         "departamento": "Moreno",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G-MVWyEW4AAWbEO.jpg",
-        "imgId": "G-MVWyEW4AAWbEO"
+        "imgId": "G-MVWyEW4AAWbEO",
+        "lat": -27.066833,
+        "lon": -62.647246
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-MDYlQaYAA6XJ3?format=jpg&name=small",
@@ -261,7 +325,9 @@
         "departamento": "Totoral",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-MDYlQaYAA6XJ3.jpg",
-        "imgId": "G-MDYlQaYAA6XJ3"
+        "imgId": "G-MDYlQaYAA6XJ3",
+        "lat": -30.474413,
+        "lon": -63.984714
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-LQIugXoAAiOUZ?format=jpg&name=small",
@@ -269,7 +335,9 @@
         "departamento": "General López",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-LQIugXoAAiOUZ.jpg",
-        "imgId": "G-LQIugXoAAiOUZ"
+        "imgId": "G-LQIugXoAAiOUZ",
+        "lat": -33.730339,
+        "lon": -61.76227
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-K0vJHWcAIM0Rd?format=jpg&name=small",
@@ -277,7 +345,9 @@
         "departamento": "San Martín",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-K0vJHWcAIM0Rd.jpg",
-        "imgId": "G-K0vJHWcAIM0Rd"
+        "imgId": "G-K0vJHWcAIM0Rd",
+        "lat": -31.857864,
+        "lon": -61.56962
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-KakrkW0AAyhhk?format=jpg&name=small",
@@ -285,7 +355,9 @@
         "departamento": "Necochea",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G-KakrkW0AAyhhk.jpg",
-        "imgId": "G-KakrkW0AAyhhk"
+        "imgId": "G-KakrkW0AAyhhk",
+        "lat": -38.005523,
+        "lon": -59.263923
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-JOwCmXMAA8i-7?format=jpg&name=small",
@@ -293,7 +365,9 @@
         "departamento": "San Jerónimo",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-JOwCmXMAA8i-7.jpg",
-        "imgId": "G-JOwCmXMAA8i-7"
+        "imgId": "G-JOwCmXMAA8i-7",
+        "lat": -32.169683,
+        "lon": -61.156687
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-J_7ZYX0AAd2If?format=jpg&name=small",
@@ -301,7 +375,9 @@
         "departamento": "San Javier",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-J_7ZYX0AAd2If.jpg",
-        "imgId": "G-J_7ZYX0AAd2If"
+        "imgId": "G-J_7ZYX0AAd2If",
+        "lat": -29.90921,
+        "lon": -59.826869
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-IRwIXWAAABbYO?format=jpg&name=small",
@@ -309,7 +385,9 @@
         "departamento": "San Cristóbal",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-IRwIXWAAABbYO.jpg",
-        "imgId": "G-IRwIXWAAABbYO"
+        "imgId": "G-IRwIXWAAABbYO",
+        "lat": -29.881894,
+        "lon": -61.945094
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-H2gvga0AITkaI?format=jpg&name=small",
@@ -317,7 +395,9 @@
         "departamento": "9 de Julio",
         "provincia": "San Juan",
         "newSrc": "/img/tweets/G-H2gvga0AITkaI.jpg",
-        "imgId": "G-H2gvga0AITkaI"
+        "imgId": "G-H2gvga0AITkaI",
+        "lat": -31.538933,
+        "lon": -68.413921
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-HbOEvXoAAxVf0?format=jpg&name=small",
@@ -325,7 +405,9 @@
         "departamento": "San Justo",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-HbOEvXoAAxVf0.jpg",
-        "imgId": "G-HbOEvXoAAxVf0"
+        "imgId": "G-HbOEvXoAAxVf0",
+        "lat": -31.301748,
+        "lon": -62.229167
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-HLmZJa0AAMPjK?format=jpg&name=small",
@@ -333,7 +415,9 @@
         "departamento": "Tinogasta",
         "provincia": "Catamarca",
         "newSrc": "/img/tweets/G-HLmZJa0AAMPjK.jpg",
-        "imgId": "G-HLmZJa0AAMPjK"
+        "imgId": "G-HLmZJa0AAMPjK",
+        "lat": -27.692193,
+        "lon": -67.618906
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-G5qVhWAAAC45X?format=jpg&name=small",
@@ -341,7 +425,9 @@
         "departamento": "Bella Vista",
         "provincia": "Corrientes",
         "newSrc": "/img/tweets/G-G5qVhWAAAC45X.jpg",
-        "imgId": "G-G5qVhWAAAC45X"
+        "imgId": "G-G5qVhWAAAC45X",
+        "lat": -28.507683,
+        "lon": -59.045217
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-GGXPXXoAAZM9L?format=jpg&name=small",
@@ -349,7 +435,9 @@
         "departamento": "Figueroa",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G-GGXPXXoAAZM9L.jpg",
-        "imgId": "G-GGXPXXoAAZM9L"
+        "imgId": "G-GGXPXXoAAZM9L",
+        "lat": -27.533035,
+        "lon": -63.383254
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Frj5yWwAAtJ0m?format=jpg&name=small",
@@ -357,7 +445,9 @@
         "departamento": "Río Seco",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-Frj5yWwAAtJ0m.jpg",
-        "imgId": "G-Frj5yWwAAtJ0m"
+        "imgId": "G-Frj5yWwAAtJ0m",
+        "lat": -29.802463,
+        "lon": -63.628247
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-FRnvpa0AIrrQn?format=jpg&name=small",
@@ -365,7 +455,9 @@
         "departamento": "Tehuelches",
         "provincia": "Chubut",
         "newSrc": "/img/tweets/G-FRnvpa0AIrrQn.jpg",
-        "imgId": "G-FRnvpa0AIrrQn"
+        "imgId": "G-FRnvpa0AIrrQn",
+        "lat": -44.191367,
+        "lon": -71.664221
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-E2OkcWQAAOtWg?format=jpg&name=small",
@@ -373,7 +465,9 @@
         "departamento": "Río Hondo",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G-E2OkcWQAAOtWg.jpg",
-        "imgId": "G-E2OkcWQAAOtWg"
+        "imgId": "G-E2OkcWQAAOtWg",
+        "lat": -27.56777,
+        "lon": -64.723764
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-EZnf5WgAEfaZH?format=jpg&name=small",
@@ -381,7 +475,9 @@
         "departamento": "General Roca",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G-EZnf5WgAEfaZH.jpg",
-        "imgId": "G-EZnf5WgAEfaZH"
+        "imgId": "G-EZnf5WgAEfaZH",
+        "lat": -34.378855,
+        "lon": -64.497128
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-EE7XRXsAAqlsm?format=jpg&name=small",
@@ -389,7 +485,9 @@
         "departamento": "Lago Argentino",
         "provincia": "Santa Cruz",
         "newSrc": "/img/tweets/G-EE7XRXsAAqlsm.jpg",
-        "imgId": "G-EE7XRXsAAqlsm"
+        "imgId": "G-EE7XRXsAAqlsm",
+        "lat": -49.59791,
+        "lon": -71.446747
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-DiYtRWsAAQ1ML?format=jpg&name=small",
@@ -397,7 +495,9 @@
         "departamento": "San Lorenzo",
         "provincia": "Chaco",
         "newSrc": "/img/tweets/G-DiYtRWsAAQ1ML.jpg",
-        "imgId": "G-DiYtRWsAAQ1ML"
+        "imgId": "G-DiYtRWsAAQ1ML",
+        "lat": -27.519108,
+        "lon": -60.394026
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-DIQx-W4AA74RL?format=jpg&name=small",
@@ -405,7 +505,9 @@
         "departamento": "General José de San Martín",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G-DIQx-W4AA74RL.jpg",
-        "imgId": "G-DIQx-W4AA74RL"
+        "imgId": "G-DIQx-W4AA74RL",
+        "lat": -22.200732,
+        "lon": -63.675741
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-Cs7rjbcAEz8-k?format=jpg&name=small",
@@ -413,7 +515,9 @@
         "departamento": "Banda",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G-Cs7rjbcAEz8-k.jpg",
-        "imgId": "G-Cs7rjbcAEz8-k"
+        "imgId": "G-Cs7rjbcAEz8-k",
+        "lat": -27.622368,
+        "lon": -64.370587
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-CR5XdboAAvowV?format=jpg&name=small",
@@ -421,7 +525,9 @@
         "departamento": "Ambato",
         "provincia": "Catamarca",
         "newSrc": "/img/tweets/G-CR5XdboAAvowV.jpg",
-        "imgId": "G-CR5XdboAAvowV"
+        "imgId": "G-CR5XdboAAvowV",
+        "lat": -27.804308,
+        "lon": -65.871198
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-BwLEjXYAAlFvN?format=jpg&name=small",
@@ -429,7 +535,9 @@
         "departamento": "Yavi",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G-BwLEjXYAAlFvN.jpg",
-        "imgId": "G-BwLEjXYAAlFvN"
+        "imgId": "G-BwLEjXYAAlFvN",
+        "lat": -22.388319,
+        "lon": -65.33799
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G-AhDvhbcAYwFgz?format=jpg&name=small",
@@ -437,7 +545,9 @@
         "departamento": "La Capital",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G-AhDvhbcAYwFgz.jpg",
-        "imgId": "G-AhDvhbcAYwFgz"
+        "imgId": "G-AhDvhbcAYwFgz",
+        "lat": -31.490893,
+        "lon": -60.735449
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9_sbyBXoAEKzoT?format=jpg&name=small",
@@ -445,7 +555,9 @@
         "departamento": "Necochea",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G9_sbyBXoAEKzoT.jpg",
-        "imgId": "G9_sbyBXoAEKzoT"
+        "imgId": "G9_sbyBXoAEKzoT",
+        "lat": -38.55446,
+        "lon": -58.739237
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G984eXHWUAAc4ig?format=jpg&name=small",
@@ -453,7 +565,9 @@
         "departamento": "El Cuy",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G984eXHWUAAc4ig.jpg",
-        "imgId": "G984eXHWUAAc4ig"
+        "imgId": "G984eXHWUAAc4ig",
+        "lat": -39.726275,
+        "lon": -68.491505
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G98meIPasAAnwPP?format=jpg&name=small",
@@ -461,7 +575,9 @@
         "departamento": "Sarmiento",
         "provincia": "Chubut",
         "newSrc": "/img/tweets/G98meIPasAAnwPP.jpg",
-        "imgId": "G98meIPasAAnwPP"
+        "imgId": "G98meIPasAAnwPP",
+        "lat": -45.076133,
+        "lon": -69.458899
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G97zTzHW0AAFaGj?format=jpg&name=small",
@@ -469,7 +585,9 @@
         "departamento": "Lezama",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G97zTzHW0AAFaGj.jpg",
-        "imgId": "G97zTzHW0AAFaGj"
+        "imgId": "G97zTzHW0AAFaGj",
+        "lat": -35.872866,
+        "lon": -57.896984
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G97X_qoXgAAtXCh?format=jpg&name=small",
@@ -477,7 +595,9 @@
         "departamento": "Güer Aike",
         "provincia": "Santa Cruz",
         "newSrc": "/img/tweets/G97X_qoXgAAtXCh.jpg",
-        "imgId": "G97X_qoXgAAtXCh"
+        "imgId": "G97X_qoXgAAtXCh",
+        "lat": -51.536423,
+        "lon": -72.337855
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G96-M2FWYAAcix0?format=jpg&name=small",
@@ -485,7 +605,9 @@
         "departamento": "Castellanos",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G96-M2FWYAAcix0.jpg",
-        "imgId": "G96-M2FWYAAcix0"
+        "imgId": "G96-M2FWYAAcix0",
+        "lat": -31.560095,
+        "lon": -61.896236
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G96iJDXbcAEal9E?format=jpg&name=small",
@@ -493,7 +615,9 @@
         "departamento": "San Cristóbal",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G96iJDXbcAEal9E.jpg",
-        "imgId": "G96iJDXbcAEal9E"
+        "imgId": "G96iJDXbcAEal9E",
+        "lat": -30.663518,
+        "lon": -61.319734
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G96Gb5zWQAA8HnK?format=jpg&name=small",
@@ -501,7 +625,9 @@
         "departamento": "Castro Barros",
         "provincia": "La Rioja",
         "newSrc": "/img/tweets/G96Gb5zWQAA8HnK.jpg",
-        "imgId": "G96Gb5zWQAA8HnK"
+        "imgId": "G96Gb5zWQAA8HnK",
+        "lat": -28.934787,
+        "lon": -66.961168
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G95yJsLbQAEnoWK?format=jpg&name=small",
@@ -509,7 +635,9 @@
         "departamento": "Presidente Roque Sáenz Peña",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G95yJsLbQAEnoWK.jpg",
-        "imgId": "G95yJsLbQAEnoWK"
+        "imgId": "G95yJsLbQAEnoWK",
+        "lat": -33.953648,
+        "lon": -62.977303
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G95Pi9bWUAA1818?format=jpg&name=small",
@@ -517,7 +645,9 @@
         "departamento": "General Güemes",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G95Pi9bWUAA1818.jpg",
-        "imgId": "G95Pi9bWUAA1818"
+        "imgId": "G95Pi9bWUAA1818",
+        "lat": -24.682967,
+        "lon": -65.104945
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G941QXFbYAAB8Ew?format=jpg&name=small",
@@ -525,7 +655,9 @@
         "departamento": "Simoca",
         "provincia": "Tucumán",
         "newSrc": "/img/tweets/G941QXFbYAAB8Ew.jpg",
-        "imgId": "G941QXFbYAAB8Ew"
+        "imgId": "G941QXFbYAAB8Ew",
+        "lat": -27.484511,
+        "lon": -65.491251
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G92NwgOX0AEysil?format=jpg&name=small",
@@ -533,7 +665,9 @@
         "departamento": "General José de San Martín",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G92NwgOX0AEysil.jpg",
-        "imgId": "G92NwgOX0AEysil"
+        "imgId": "G92NwgOX0AEysil",
+        "lat": -22.325044,
+        "lon": -63.753306
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G91XhHeakAAnoST?format=jpg&name=small",
@@ -541,7 +675,9 @@
         "departamento": "Pellegrini",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G91XhHeakAAnoST.jpg",
-        "imgId": "G91XhHeakAAnoST"
+        "imgId": "G91XhHeakAAnoST",
+        "lat": -26.393318,
+        "lon": -64.505051
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G90ETUaWcAAMhnq?format=jpg&name=small",
@@ -549,7 +685,9 @@
         "departamento": "San Cayetano",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G90ETUaWcAAMhnq.jpg",
-        "imgId": "G90ETUaWcAAMhnq"
+        "imgId": "G90ETUaWcAAMhnq",
+        "lat": -38.345789,
+        "lon": -59.60676
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9yZBdEXQAAKk0W?format=jpg&name=small",
@@ -557,7 +695,9 @@
         "departamento": "Fray Justo Santa María de Oro",
         "provincia": "Chaco",
         "newSrc": "/img/tweets/G9yZBdEXQAAKk0W.jpg",
-        "imgId": "G9yZBdEXQAAKk0W"
+        "imgId": "G9yZBdEXQAAKk0W",
+        "lat": -27.914645,
+        "lon": -61.401399
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9xfl4kW0AAs3cR?format=jpg&name=small",
@@ -565,7 +705,9 @@
         "departamento": "Juan Martín Pueyrredón",
         "provincia": "San Luis",
         "newSrc": "/img/tweets/G9xfl4kW0AAs3cR.jpg",
-        "imgId": "G9xfl4kW0AAs3cR"
+        "imgId": "G9xfl4kW0AAs3cR",
+        "lat": -33.341055,
+        "lon": -66.621697
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9xEAyIbcAAcZIQ?format=jpg&name=small",
@@ -573,7 +715,9 @@
         "departamento": "Famatina",
         "provincia": "La Rioja",
         "newSrc": "/img/tweets/G9xEAyIbcAAcZIQ.jpg",
-        "imgId": "G9xEAyIbcAAcZIQ"
+        "imgId": "G9xEAyIbcAAcZIQ",
+        "lat": -28.575978,
+        "lon": -67.449094
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9vxd9kWoAArgE5?format=jpg&name=small",
@@ -581,7 +725,9 @@
         "departamento": "Victoria",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G9vxd9kWoAArgE5.jpg",
-        "imgId": "G9vxd9kWoAArgE5"
+        "imgId": "G9vxd9kWoAArgE5",
+        "lat": -32.306825,
+        "lon": -60.423089
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9vbIgtWUAEeNLp?format=jpg&name=small",
@@ -589,7 +735,9 @@
         "departamento": "General José de San Martín",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G9vbIgtWUAEeNLp.jpg",
-        "imgId": "G9vbIgtWUAEeNLp"
+        "imgId": "G9vbIgtWUAEeNLp",
+        "lat": -22.369317,
+        "lon": -63.768479
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9tqNvQXsAA_grI?format=jpg&name=small",
@@ -597,7 +745,9 @@
         "departamento": "Tres Arroyos",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G9tqNvQXsAA_grI.jpg",
-        "imgId": "G9tqNvQXsAA_grI"
+        "imgId": "G9tqNvQXsAA_grI",
+        "lat": -38.312396,
+        "lon": -60.231647
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9tINOTXAAA8g8t?format=jpg&name=small",
@@ -605,7 +755,9 @@
         "departamento": "Río Segundo",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9tINOTXAAA8g8t.jpg",
-        "imgId": "G9tINOTXAAA8g8t"
+        "imgId": "G9tINOTXAAA8g8t",
+        "lat": -31.798474,
+        "lon": -63.650083
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9sWJt7WoAAbbck?format=jpg&name=small",
@@ -613,7 +765,9 @@
         "departamento": "Juárez Celman",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9sWJt7WoAAbbck.jpg",
-        "imgId": "G9sWJt7WoAAbbck"
+        "imgId": "G9sWJt7WoAAbbck",
+        "lat": -33.170737,
+        "lon": -64.047763
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9qokSXXgAEQ3QF?format=jpg&name=small",
@@ -621,7 +775,9 @@
         "departamento": "General Roca",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G9qokSXXgAEQ3QF.jpg",
-        "imgId": "G9qokSXXgAEQ3QF"
+        "imgId": "G9qokSXXgAEQ3QF",
+        "lat": -39.056199,
+        "lon": -67.345089
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9pxe4ZXgAAy5HE?format=jpg&name=small",
@@ -629,7 +785,9 @@
         "departamento": "Jáchal",
         "provincia": "San Juan",
         "newSrc": "/img/tweets/G9pxe4ZXgAAy5HE.jpg",
-        "imgId": "G9pxe4ZXgAAy5HE"
+        "imgId": "G9pxe4ZXgAAy5HE",
+        "lat": -30.157755,
+        "lon": -68.482428
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9oScMcWEAAmIsJ?format=jpg&name=small",
@@ -637,7 +795,9 @@
         "departamento": "San Martín",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G9oScMcWEAAmIsJ.jpg",
-        "imgId": "G9oScMcWEAAmIsJ"
+        "imgId": "G9oScMcWEAAmIsJ",
+        "lat": -32.143926,
+        "lon": -61.980442
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9l7noiWEAAqFWJ?format=jpg&name=small",
@@ -645,7 +805,9 @@
         "departamento": "Utracán",
         "provincia": "La Pampa",
         "newSrc": "/img/tweets/G9l7noiWEAAqFWJ.jpg",
-        "imgId": "G9l7noiWEAAqFWJ"
+        "imgId": "G9l7noiWEAAqFWJ",
+        "lat": -37.332043,
+        "lon": -65.651624
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9iC8w7XcAAUL3E?format=jpg&name=small",
@@ -653,7 +815,9 @@
         "departamento": "Humahuaca",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G9iC8w7XcAAUL3E.jpg",
-        "imgId": "G9iC8w7XcAAUL3E"
+        "imgId": "G9iC8w7XcAAUL3E",
+        "lat": -23.100325,
+        "lon": -65.110308
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9gVHkrXQAAq86O?format=jpg&name=small",
@@ -661,7 +825,9 @@
         "departamento": "Tercero Arriba",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9gVHkrXQAAq86O.jpg",
-        "imgId": "G9gVHkrXQAAq86O"
+        "imgId": "G9gVHkrXQAAq86O",
+        "lat": -32.509219,
+        "lon": -63.928956
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9gAo14a8AE3Y5k?format=jpg&name=small",
@@ -669,7 +835,9 @@
         "departamento": "Concepción",
         "provincia": "Misiones",
         "newSrc": "/img/tweets/G9gAo14a8AE3Y5k.jpg",
-        "imgId": "G9gAo14a8AE3Y5k"
+        "imgId": "G9gAo14a8AE3Y5k",
+        "lat": -27.934514,
+        "lon": -55.407334
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9feae1XcAALQ41?format=jpg&name=small",
@@ -677,7 +845,9 @@
         "departamento": "Río Hondo",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G9feae1XcAALQ41.jpg",
-        "imgId": "G9feae1XcAALQ41"
+        "imgId": "G9feae1XcAALQ41",
+        "lat": -27.514297,
+        "lon": -64.90695
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9fEjAEWkAAS3kT?format=jpg&name=small",
@@ -685,7 +855,9 @@
         "departamento": "Paraná",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G9fEjAEWkAAS3kT.jpg",
-        "imgId": "G9fEjAEWkAAS3kT"
+        "imgId": "G9fEjAEWkAAS3kT",
+        "lat": -31.682881,
+        "lon": -60.231082
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9epggeWcAAZ2g1?format=jpg&name=small",
@@ -693,7 +865,9 @@
         "departamento": "Las Colonias",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G9epggeWcAAZ2g1.jpg",
-        "imgId": "G9epggeWcAAZ2g1"
+        "imgId": "G9epggeWcAAZ2g1",
+        "lat": -31.345007,
+        "lon": -61.235135
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9aVTtdagAAJyJm?format=jpg&name=small",
@@ -701,7 +875,9 @@
         "departamento": "Puelén",
         "provincia": "La Pampa",
         "newSrc": "/img/tweets/G9aVTtdagAAJyJm.jpg",
-        "imgId": "G9aVTtdagAAJyJm"
+        "imgId": "G9aVTtdagAAJyJm",
+        "lat": -38.154553,
+        "lon": -67.152497
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9Z6_t4XEAALf1X?format=jpg&name=small",
@@ -709,7 +885,9 @@
         "departamento": "Capayán",
         "provincia": "Catamarca",
         "newSrc": "/img/tweets/G9Z6_t4XEAALf1X.jpg",
-        "imgId": "G9Z6_t4XEAALf1X"
+        "imgId": "G9Z6_t4XEAALf1X",
+        "lat": -28.687098,
+        "lon": -66.065888
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9ZE8G1X0AA1vT7?format=jpg&name=small",
@@ -717,7 +895,9 @@
         "departamento": "San Jerónimo",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G9ZE8G1X0AA1vT7.jpg",
-        "imgId": "G9ZE8G1X0AA1vT7"
+        "imgId": "G9ZE8G1X0AA1vT7",
+        "lat": -31.83792,
+        "lon": -60.865033
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9Yi-EAasAAebqu?format=jpg&name=small",
@@ -725,7 +905,9 @@
         "departamento": "Tercero Arriba",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9Yi-EAasAAebqu.jpg",
-        "imgId": "G9Yi-EAasAAebqu"
+        "imgId": "G9Yi-EAasAAebqu",
+        "lat": -32.035025,
+        "lon": -63.864785
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9WCihTbkAEjdWt?format=jpg&name=small",
@@ -733,7 +915,9 @@
         "departamento": "General Roca",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G9WCihTbkAEjdWt.jpg",
-        "imgId": "G9WCihTbkAEjdWt"
+        "imgId": "G9WCihTbkAEjdWt",
+        "lat": -39.106782,
+        "lon": -67.62737
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9VuWONWEAAbhE7?format=jpg&name=small",
@@ -741,7 +925,9 @@
         "departamento": "Bermejo",
         "provincia": "Formosa",
         "newSrc": "/img/tweets/G9VuWONWEAAbhE7.jpg",
-        "imgId": "G9VuWONWEAAbhE7"
+        "imgId": "G9VuWONWEAAbhE7",
+        "lat": -24.148754,
+        "lon": -60.689961
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9UxxxWWkAIOEh9?format=jpg&name=small",
@@ -749,7 +935,9 @@
         "departamento": "San Martín",
         "provincia": "San Juan",
         "newSrc": "/img/tweets/G9UxxxWWkAIOEh9.jpg",
-        "imgId": "G9UxxxWWkAIOEh9"
+        "imgId": "G9UxxxWWkAIOEh9",
+        "lat": -31.553816,
+        "lon": -68.338975
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9SKhbwWAAACU6O?format=jpg&name=small",
@@ -757,7 +945,9 @@
         "departamento": "Junín",
         "provincia": "Mendoza",
         "newSrc": "/img/tweets/G9SKhbwWAAACU6O.jpg",
-        "imgId": "G9SKhbwWAAACU6O"
+        "imgId": "G9SKhbwWAAACU6O",
+        "lat": -33.200981,
+        "lon": -68.377493
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9Q4G8FXMAAZdaQ?format=jpg&name=small",
@@ -765,7 +955,9 @@
         "departamento": "Almirante Brown",
         "provincia": "Chaco",
         "newSrc": "/img/tweets/G9Q4G8FXMAAZdaQ.jpg",
-        "imgId": "G9Q4G8FXMAAZdaQ"
+        "imgId": "G9Q4G8FXMAAZdaQ",
+        "lat": -25.615035,
+        "lon": -63.264858
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9OyGQtWMAEPxmt?format=jpg&name=small",
@@ -773,7 +965,9 @@
         "departamento": "Comandante Fernández",
         "provincia": "Chaco",
         "newSrc": "/img/tweets/G9OyGQtWMAEPxmt.jpg",
-        "imgId": "G9OyGQtWMAEPxmt"
+        "imgId": "G9OyGQtWMAEPxmt",
+        "lat": -26.790972,
+        "lon": -60.441248
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9OVVoPWgAAQXva?format=jpg&name=small",
@@ -781,7 +975,9 @@
         "departamento": "Punilla",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9OVVoPWgAAQXva.jpg",
-        "imgId": "G9OVVoPWgAAQXva"
+        "imgId": "G9OVVoPWgAAQXva",
+        "lat": -31.480335,
+        "lon": -64.578692
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9JXGLSWEAA2kt_?format=jpg&name=small",
@@ -789,7 +985,9 @@
         "departamento": "Caucete",
         "provincia": "San Juan",
         "newSrc": "/img/tweets/G9JXGLSWEAA2kt_.jpg",
-        "imgId": "G9JXGLSWEAA2kt_"
+        "imgId": "G9JXGLSWEAA2kt_",
+        "lat": -31.661265,
+        "lon": -68.2197
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9JFP_wWQAAfzhx?format=jpg&name=small",
@@ -797,7 +995,9 @@
         "departamento": "Las Heras",
         "provincia": "Mendoza",
         "newSrc": "/img/tweets/G9JFP_wWQAAfzhx.jpg",
-        "imgId": "G9JFP_wWQAAfzhx"
+        "imgId": "G9JFP_wWQAAfzhx",
+        "lat": -32.813948,
+        "lon": -70.048955
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9H3G6UXAAEqFFx?format=jpg&name=small",
@@ -805,7 +1005,9 @@
         "departamento": "Presidente Roque Sáenz Peña",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9H3G6UXAAEqFFx.jpg",
-        "imgId": "G9H3G6UXAAEqFFx"
+        "imgId": "G9H3G6UXAAEqFFx",
+        "lat": -34.051372,
+        "lon": -63.733066
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9IS3pLbgAMqInq?format=jpg&name=small",
@@ -813,7 +1015,9 @@
         "departamento": "Federación",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G9IS3pLbgAMqInq.jpg",
-        "imgId": "G9IS3pLbgAMqInq"
+        "imgId": "G9IS3pLbgAMqInq",
+        "lat": -30.795739,
+        "lon": -57.914553
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9HdXzLWUAAP2nC?format=jpg&name=small",
@@ -821,7 +1025,9 @@
         "departamento": "San Vicente",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G9HdXzLWUAAP2nC.jpg",
-        "imgId": "G9HdXzLWUAAP2nC"
+        "imgId": "G9HdXzLWUAAP2nC",
+        "lat": -35.024909,
+        "lon": -58.424058
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9HBGCWXQAAxPDa?format=jpg&name=small",
@@ -829,7 +1035,9 @@
         "departamento": "Chacabuco",
         "provincia": "San Luis",
         "newSrc": "/img/tweets/G9HBGCWXQAAxPDa.jpg",
-        "imgId": "G9HBGCWXQAAxPDa"
+        "imgId": "G9HBGCWXQAAxPDa",
+        "lat": -32.939955,
+        "lon": -65.03888
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9GlO8-bMAINT7E?format=jpg&name=small",
@@ -837,7 +1045,9 @@
         "departamento": "Belgrano",
         "provincia": "San Luis",
         "newSrc": "/img/tweets/G9GlO8-bMAINT7E.jpg",
-        "imgId": "G9GlO8-bMAINT7E"
+        "imgId": "G9GlO8-bMAINT7E",
+        "lat": -32.863433,
+        "lon": -66.849529
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9FufuRWIAAVH08?format=jpg&name=small",
@@ -845,7 +1055,9 @@
         "departamento": "Chicoana",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G9FufuRWIAAVH08.jpg",
-        "imgId": "G9FufuRWIAAVH08"
+        "imgId": "G9FufuRWIAAVH08",
+        "lat": -25.153321,
+        "lon": -65.439353
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9FUGcQaIAITruk?format=jpg&name=small",
@@ -853,7 +1065,9 @@
         "departamento": "Chacabuco",
         "provincia": "San Luis",
         "newSrc": "/img/tweets/G9FUGcQaIAITruk.jpg",
-        "imgId": "G9FUGcQaIAITruk"
+        "imgId": "G9FUGcQaIAITruk",
+        "lat": -32.675103,
+        "lon": -64.98895
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9E5Y-nWMAAYtHs?format=jpg&name=small",
@@ -861,7 +1075,9 @@
         "departamento": "Sarmiento",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G9E5Y-nWMAAYtHs.jpg",
-        "imgId": "G9E5Y-nWMAAYtHs"
+        "imgId": "G9E5Y-nWMAAYtHs",
+        "lat": -28.152941,
+        "lon": -63.538873
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9Ed46nWkAAjVfj?format=jpg&name=small",
@@ -869,7 +1085,9 @@
         "departamento": "La Capital",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G9Ed46nWkAAjVfj.jpg",
-        "imgId": "G9Ed46nWkAAjVfj"
+        "imgId": "G9Ed46nWkAAjVfj",
+        "lat": -31.515355,
+        "lon": -60.613211
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9EOFqUXkAAtf1u?format=jpg&name=small",
@@ -877,7 +1095,9 @@
         "departamento": "Río Segundo",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9EOFqUXkAAtf1u.jpg",
-        "imgId": "G9EOFqUXkAAtf1u"
+        "imgId": "G9EOFqUXkAAtf1u",
+        "lat": -31.862549,
+        "lon": -63.277786
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9D8SAwWYAAlFsw?format=jpg&name=small",
@@ -885,7 +1105,9 @@
         "departamento": "Calamuchita",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G9D8SAwWYAAlFsw.jpg",
-        "imgId": "G9D8SAwWYAAlFsw"
+        "imgId": "G9D8SAwWYAAlFsw",
+        "lat": -32.388803,
+        "lon": -64.521436
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9DJQE9XoAAhobh?format=jpg&name=small",
@@ -893,7 +1115,9 @@
         "departamento": "Bolívar",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G9DJQE9XoAAhobh.jpg",
-        "imgId": "G9DJQE9XoAAhobh"
+        "imgId": "G9DJQE9XoAAhobh",
+        "lat": -36.229879,
+        "lon": -61.113917
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9CtyXXbQAAnhSM?format=jpg&name=small",
@@ -901,7 +1125,9 @@
         "departamento": "Berón de Astrada",
         "provincia": "Corrientes",
         "newSrc": "/img/tweets/G9CtyXXbQAAnhSM.jpg",
-        "imgId": "G9CtyXXbQAAnhSM"
+        "imgId": "G9CtyXXbQAAnhSM",
+        "lat": -27.371446,
+        "lon": -57.655037
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9B4LCkb0AI0boc?format=jpg&name=small",
@@ -909,7 +1135,9 @@
         "departamento": "Rosario de Lerma",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G9B4LCkb0AI0boc.jpg",
-        "imgId": "G9B4LCkb0AI0boc"
+        "imgId": "G9B4LCkb0AI0boc",
+        "lat": -24.872809,
+        "lon": -65.563222
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9Ak5UYb0AYcBfb?format=jpg&name=small",
@@ -917,7 +1145,9 @@
         "departamento": "Pilagás",
         "provincia": "Formosa",
         "newSrc": "/img/tweets/G9Ak5UYb0AYcBfb.jpg",
-        "imgId": "G9Ak5UYb0AYcBfb"
+        "imgId": "G9Ak5UYb0AYcBfb",
+        "lat": -25.216124,
+        "lon": -58.513079
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G9AKk8SWIAEUXZt?format=jpg&name=small",
@@ -925,7 +1155,9 @@
         "departamento": "Rivadavia",
         "provincia": "Mendoza",
         "newSrc": "/img/tweets/G9AKk8SWIAEUXZt.jpg",
-        "imgId": "G9AKk8SWIAEUXZt"
+        "imgId": "G9AKk8SWIAEUXZt",
+        "lat": -33.195765,
+        "lon": -68.465923
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8_Usd-b0AEAFZM?format=jpg&name=small",
@@ -933,7 +1165,9 @@
         "departamento": "San Alberto",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G8_Usd-b0AEAFZM.jpg",
-        "imgId": "G8_Usd-b0AEAFZM"
+        "imgId": "G8_Usd-b0AEAFZM",
+        "lat": -31.850557,
+        "lon": -65.429474
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8_E45MaUAAJyRF?format=jpg&name=small",
@@ -941,7 +1175,9 @@
         "departamento": "Unión",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G8_E45MaUAAJyRF.jpg",
-        "imgId": "G8_E45MaUAAJyRF"
+        "imgId": "G8_E45MaUAAJyRF",
+        "lat": -33.464255,
+        "lon": -62.731177
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G89kNIEb0AEpCo0?format=jpg&name=small",
@@ -949,7 +1185,9 @@
         "departamento": "Castellanos",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G89kNIEb0AEpCo0.jpg",
-        "imgId": "G89kNIEb0AEpCo0"
+        "imgId": "G89kNIEb0AEpCo0",
+        "lat": -31.091856,
+        "lon": -61.902472
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G88SBvNXsAAfkW3?format=jpg&name=small",
@@ -957,7 +1195,9 @@
         "departamento": "Tumbaya",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G88SBvNXsAAfkW3.jpg",
-        "imgId": "G88SBvNXsAAfkW3"
+        "imgId": "G88SBvNXsAAfkW3",
+        "lat": -23.853706,
+        "lon": -65.831797
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G89KUFTagAAcf3H?format=jpg&name=small",
@@ -965,7 +1205,9 @@
         "departamento": "Río Hondo",
         "provincia": "Santiago del Estero",
         "newSrc": "/img/tweets/G89KUFTagAAcf3H.jpg",
-        "imgId": "G89KUFTagAAcf3H"
+        "imgId": "G89KUFTagAAcf3H",
+        "lat": -27.488395,
+        "lon": -64.582026
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G87bYcIbYAA_BXP?format=jpg&name=small",
@@ -973,7 +1215,9 @@
         "departamento": "General José de San Martín",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G87bYcIbYAA_BXP.jpg",
-        "imgId": "G87bYcIbYAA_BXP"
+        "imgId": "G87bYcIbYAA_BXP",
+        "lat": -22.406223,
+        "lon": -63.775362
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G856sBoagAIMPgH?format=jpg&name=small",
@@ -981,7 +1225,9 @@
         "departamento": "Castellanos",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G856sBoagAIMPgH.jpg",
-        "imgId": "G856sBoagAIMPgH"
+        "imgId": "G856sBoagAIMPgH",
+        "lat": -31.336666,
+        "lon": -61.621579
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G85ouWBW0AAephV?format=jpg&name=small",
@@ -989,7 +1235,9 @@
         "departamento": "Conesa",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G85ouWBW0AAephV.jpg",
-        "imgId": "G85ouWBW0AAephV"
+        "imgId": "G85ouWBW0AAephV",
+        "lat": -40.06193,
+        "lon": -64.474854
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G84184mXUAEBJv3?format=jpg&name=small",
@@ -997,7 +1245,9 @@
         "departamento": "General Pueyrredón",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G84184mXUAEBJv3.jpg",
-        "imgId": "G84184mXUAEBJv3"
+        "imgId": "G84184mXUAEBJv3",
+        "lat": -38.036654,
+        "lon": -57.713504
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G84ajHRaoAAmON_?format=jpg&name=small",
@@ -1005,7 +1255,9 @@
         "departamento": "Loventué",
         "provincia": "La Pampa",
         "newSrc": "/img/tweets/G84ajHRaoAAmON_.jpg",
-        "imgId": "G84ajHRaoAAmON_"
+        "imgId": "G84ajHRaoAAmON_",
+        "lat": -36.264278,
+        "lon": -65.511174
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G83I5MEW0AA9-i6?format=jpg&name=small",
@@ -1013,7 +1265,9 @@
         "departamento": "Valcheta",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G83I5MEW0AA9-i6.jpg",
-        "imgId": "G83I5MEW0AA9-i6"
+        "imgId": "G83I5MEW0AA9-i6",
+        "lat": -40.676352,
+        "lon": -66.166517
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G83lWXCW0AAw6vG?format=jpg&name=small",
@@ -1021,7 +1275,9 @@
         "departamento": "Paclín",
         "provincia": "Catamarca",
         "newSrc": "/img/tweets/G83lWXCW0AAw6vG.jpg",
-        "imgId": "G83lWXCW0AAw6vG"
+        "imgId": "G83lWXCW0AAw6vG",
+        "lat": -28.262572,
+        "lon": -65.637347
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G84BIuMaAAAW5EH?format=jpg&name=small",
@@ -1029,7 +1285,9 @@
         "departamento": "Chacabuco",
         "provincia": "San Luis",
         "newSrc": "/img/tweets/G84BIuMaAAAW5EH.jpg",
-        "imgId": "G84BIuMaAAAW5EH"
+        "imgId": "G84BIuMaAAAW5EH",
+        "lat": -32.915223,
+        "lon": -65.375928
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G820cyZbEAAZfV0?format=jpg&name=small",
@@ -1037,7 +1295,9 @@
         "departamento": "Colón",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G820cyZbEAAZfV0.jpg",
-        "imgId": "G820cyZbEAAZfV0"
+        "imgId": "G820cyZbEAAZfV0",
+        "lat": -32.00315,
+        "lon": -58.490794
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G80xpPpaEAAqDc5?format=jpg&name=small",
@@ -1045,7 +1305,9 @@
         "departamento": "Uruguay",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G80xpPpaEAAqDc5.jpg",
-        "imgId": "G80xpPpaEAAqDc5"
+        "imgId": "G80xpPpaEAAqDc5",
+        "lat": -32.462119,
+        "lon": -58.479321
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8y3XgyXYAEqqRz?format=jpg&name=small",
@@ -1053,7 +1315,9 @@
         "departamento": "Punilla",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G8y3XgyXYAEqqRz.jpg",
-        "imgId": "G8y3XgyXYAEqqRz"
+        "imgId": "G8y3XgyXYAEqqRz",
+        "lat": -31.517419,
+        "lon": -64.534184
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8ybjx2XQAArowM?format=jpg&name=small",
@@ -1061,7 +1325,9 @@
         "departamento": "Pomán",
         "provincia": "Catamarca",
         "newSrc": "/img/tweets/G8ybjx2XQAArowM.jpg",
-        "imgId": "G8ybjx2XQAArowM"
+        "imgId": "G8ybjx2XQAArowM",
+        "lat": -28.314847,
+        "lon": -66.149014
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8x-_HibwAEPLT7?format=jpg&name=small",
@@ -1069,7 +1335,9 @@
         "departamento": "Luján de Cuyo",
         "provincia": "Mendoza",
         "newSrc": "/img/tweets/G8x-_HibwAEPLT7.jpg",
-        "imgId": "G8x-_HibwAEPLT7"
+        "imgId": "G8x-_HibwAEPLT7",
+        "lat": -33.076683,
+        "lon": -68.913799
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8wTdeEXgAAeDN5?format=jpg&name=small",
@@ -1077,7 +1345,9 @@
         "departamento": "Pellegrini",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G8wTdeEXgAAeDN5.jpg",
-        "imgId": "G8wTdeEXgAAeDN5"
+        "imgId": "G8wTdeEXgAAeDN5",
+        "lat": -36.2061,
+        "lon": -63.077533
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8uirYNW0AA1PDU?format=jpg&name=small",
@@ -1085,7 +1355,9 @@
         "departamento": "San Alberto",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G8uirYNW0AA1PDU.jpg",
-        "imgId": "G8uirYNW0AA1PDU"
+        "imgId": "G8uirYNW0AA1PDU",
+        "lat": -31.797205,
+        "lon": -65.002499
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8oi-ovbMAYERzD?format=jpg&name=small",
@@ -1093,7 +1365,9 @@
         "departamento": "Saavedra",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G8oi-ovbMAYERzD.jpg",
-        "imgId": "G8oi-ovbMAYERzD"
+        "imgId": "G8oi-ovbMAYERzD",
+        "lat": -37.602549,
+        "lon": -62.408361
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8mZwAebMAMbiwS?format=jpg&name=small",
@@ -1101,7 +1375,9 @@
         "departamento": "General José de San Martín",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G8mZwAebMAMbiwS.jpg",
-        "imgId": "G8mZwAebMAMbiwS"
+        "imgId": "G8mZwAebMAMbiwS",
+        "lat": -22.545077,
+        "lon": -63.798959
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8lA0QtbMAABcXl?format=jpg&name=small",
@@ -1109,7 +1385,9 @@
         "departamento": "General Roca",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G8lA0QtbMAABcXl.jpg",
-        "imgId": "G8lA0QtbMAABcXl"
+        "imgId": "G8lA0QtbMAABcXl",
+        "lat": -39.001286,
+        "lon": -67.848819
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8jahelbMAEMmFx?format=jpg&name=small",
@@ -1117,7 +1395,9 @@
         "departamento": "Tornquist",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G8jahelbMAEMmFx.jpg",
-        "imgId": "G8jahelbMAEMmFx"
+        "imgId": "G8jahelbMAEMmFx",
+        "lat": -38.337332,
+        "lon": -62.644585
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8iidBkaQAEs1X2?format=jpg&name=small",
@@ -1125,7 +1405,9 @@
         "departamento": "9 de Julio",
         "provincia": "Río Negro",
         "newSrc": "/img/tweets/G8iidBkaQAEs1X2.jpg",
-        "imgId": "G8iidBkaQAEs1X2"
+        "imgId": "G8iidBkaQAEs1X2",
+        "lat": -41.338083,
+        "lon": -67.905086
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8hRUzaa0AEbEx9?format=jpg&name=small",
@@ -1133,7 +1415,9 @@
         "departamento": "San Justo",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G8hRUzaa0AEbEx9.jpg",
-        "imgId": "G8hRUzaa0AEbEx9"
+        "imgId": "G8hRUzaa0AEbEx9",
+        "lat": -31.703482,
+        "lon": -62.483462
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8gKvqUakAAIVAn?format=jpg&name=small",
@@ -1141,7 +1425,9 @@
         "departamento": "General José de San Martín",
         "provincia": "Salta",
         "newSrc": "/img/tweets/G8gKvqUakAAIVAn.jpg",
-        "imgId": "G8gKvqUakAAIVAn"
+        "imgId": "G8gKvqUakAAIVAn",
+        "lat": -22.244873,
+        "lon": -63.735334
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8eqdxQakAEpxl5?format=jpg&name=small",
@@ -1149,7 +1435,9 @@
         "departamento": "San Lorenzo",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G8eqdxQakAEpxl5.jpg",
-        "imgId": "G8eqdxQakAEpxl5"
+        "imgId": "G8eqdxQakAEpxl5",
+        "lat": -32.826456,
+        "lon": -60.716156
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8eRd2qbkAAnd5s?format=jpg&name=small",
@@ -1157,7 +1445,9 @@
         "departamento": "Empedrado",
         "provincia": "Corrientes",
         "newSrc": "/img/tweets/G8eRd2qbkAAnd5s.jpg",
-        "imgId": "G8eRd2qbkAAnd5s"
+        "imgId": "G8eRd2qbkAAnd5s",
+        "lat": -27.950703,
+        "lon": -58.803095
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8d19-vakAIQXH6?format=jpg&name=small",
@@ -1165,7 +1455,9 @@
         "departamento": "Río Seco",
         "provincia": "Córdoba",
         "newSrc": "/img/tweets/G8d19-vakAIQXH6.jpg",
-        "imgId": "G8d19-vakAIQXH6"
+        "imgId": "G8d19-vakAIQXH6",
+        "lat": -29.924738,
+        "lon": -63.590815
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8cH4x5bIAAGkhr?format=jpg&name=small",
@@ -1173,7 +1465,9 @@
         "departamento": "Rivadavia",
         "provincia": "Mendoza",
         "newSrc": "/img/tweets/G8cH4x5bIAAGkhr.jpg",
-        "imgId": "G8cH4x5bIAAGkhr"
+        "imgId": "G8cH4x5bIAAGkhr",
+        "lat": -33.175178,
+        "lon": -68.427608
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8XY4x5a4AIxnRR?format=jpg&name=small",
@@ -1181,7 +1475,9 @@
         "departamento": "Gaiman",
         "provincia": "Chubut",
         "newSrc": "/img/tweets/G8XY4x5a4AIxnRR.jpg",
-        "imgId": "G8XY4x5a4AIxnRR"
+        "imgId": "G8XY4x5a4AIxnRR",
+        "lat": -43.307979,
+        "lon": -65.709872
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8WjOmBa4AI_GWo?format=jpg&name=small",
@@ -1189,7 +1485,9 @@
         "departamento": "Palpalá",
         "provincia": "Jujuy",
         "newSrc": "/img/tweets/G8WjOmBa4AI_GWo.jpg",
-        "imgId": "G8WjOmBa4AI_GWo"
+        "imgId": "G8WjOmBa4AI_GWo",
+        "lat": -24.229027,
+        "lon": -65.178415
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8Uy0TeasAAU-zn?format=jpg&name=small",
@@ -1197,7 +1495,9 @@
         "departamento": "San Jerónimo",
         "provincia": "Santa Fe",
         "newSrc": "/img/tweets/G8Uy0TeasAAU-zn.jpg",
-        "imgId": "G8Uy0TeasAAU-zn"
+        "imgId": "G8Uy0TeasAAU-zn",
+        "lat": -32.364952,
+        "lon": -61.337167
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8T-O6PaYAEFl8d?format=jpg&name=small",
@@ -1205,7 +1505,9 @@
         "departamento": "General Pueyrredón",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G8T-O6PaYAEFl8d.jpg",
-        "imgId": "G8T-O6PaYAEFl8d"
+        "imgId": "G8T-O6PaYAEFl8d",
+        "lat": -38.007762,
+        "lon": -57.710503
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8TGyMma4Asi_L9?format=jpg&name=small",
@@ -1213,7 +1515,9 @@
         "departamento": "Necochea",
         "provincia": "Buenos Aires",
         "newSrc": "/img/tweets/G8TGyMma4Asi_L9.jpg",
-        "imgId": "G8TGyMma4Asi_L9"
+        "imgId": "G8TGyMma4Asi_L9",
+        "lat": -38.55446,
+        "lon": -58.739237
     },
     {
         "imgSrc": "https://pbs.twimg.com/media/G8R1FbvaEAAol3L?format=jpg&name=small",
@@ -1221,6 +1525,8 @@
         "departamento": "Federal",
         "provincia": "Entre Ríos",
         "newSrc": "/img/tweets/G8R1FbvaEAAol3L.jpg",
-        "imgId": "G8R1FbvaEAAol3L"
+        "imgId": "G8R1FbvaEAAol3L",
+        "lat": -30.974102,
+        "lon": -58.996414
     }
 ]

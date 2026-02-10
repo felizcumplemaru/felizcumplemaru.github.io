@@ -1,9 +1,9 @@
 const clues = {
-    "clue-1": "Vista Flores",
-    "clue-2": "Tunuyán",
-    "clue-3": "Mendoza",
-    'lat': -33.650876,
-    'lon': -69.155760
+    "clue-1": "",
+    "clue-2": "",
+    "clue-3": "",
+    'lat': 0,
+    'lon': 0
 }
 
 const mapConfig = {
@@ -21,14 +21,26 @@ const mapConfig = {
     orientation: 0
 };
 
-let clueIndex = 1;
+let clueIndex = 0;
 let guessLat = 0;
 let guessLon = 0;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const mapImage = document.querySelector('.map-container img');
-    
-    if (!mapImage) return;
+document.addEventListener('DOMContentLoaded', async function() {
+    const index = Math.floor(Math.random() * 156);
+    console.log(`Selected tweet index: ${index}`);
+    const response = await fetch("tweets.json");
+    const tweets = await response.json();
+    const tweet = tweets[index];
+    clues['lat'] = tweet.lat;
+    clues['lon'] = tweet.lon;
+    clues['clue-1'] = tweet.ciudad;
+    clues['clue-2'] = tweet.departamento;
+    clues['clue-3'] = tweet.provincia;
+    document.getElementById("tweet").textContent = tweet.text;
+    const mapContainer = document.querySelector('.map-container');
+    const mapImage = document.createElement("img");
+    mapImage.src = tweet.newSrc;
+    mapContainer.appendChild(mapImage);
     
     // Wait for image to load to get dimensions
     if (mapImage.complete) {
@@ -95,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function getClue() {
+    if (clueIndex > 2) return;
     const clueElement = document.getElementById(`clue-${clueIndex}`);
     const clueValue = clues[`clue-${clueIndex}`];
     if (clueElement) {
         clueIndex++;
-        if (clueIndex > 3) return;
         document.getElementById("clue").textContent = `${clueIndex}/3`;
         clueElement.textContent = clueValue;
     }
