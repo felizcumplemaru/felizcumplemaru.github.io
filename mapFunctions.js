@@ -8,10 +8,10 @@ function coordinatesToPixelLambertAzimuthal(latitude, longitude, config) {
         };
     }
     
-    // Calculate angular distance from south pole
-    const angularDist = Math.abs(latitude + 90);  // Should always be positive
+    // Calculate angular distance from south pole (degrees)
+    const angularDist = Math.abs(latitude + 90);
     
-    // Determine appropriate scale based on angular distance
+    // Determine appropriate scale based on angular distance (allow regional overrides)
     let scale = config.scale;
     if (config.regionalScales) {
         const scales = config.regionalScales;
@@ -20,45 +20,40 @@ function coordinatesToPixelLambertAzimuthal(latitude, longitude, config) {
         else if (angularDist <= 60) scale = scales.far || config.scale;
         else scale = scales.vfar || config.scale;
     }
-    
-    // Calculate rho (distance from center in pixels) using the selected scale
+
+    // Convert angular distance to radians and compute rho using spherical Lambert Azimuthal equal-area
     const angularDistRad = angularDist * Math.PI / 180;
     const rho = scale * 2 * Math.sin(angularDistRad / 2);
-    
-    // Calculate azimuth from longitude
+
+    // Compute longitude difference and normalize to [-180,180]
     let lonDiff = longitude - config.centerLongitude;
-    
-    // Normalize to -180 to 180
     while (lonDiff > 180) lonDiff -= 360;
     while (lonDiff < -180) lonDiff += 360;
-    
-    // Apply inverse of longitude correction
-    // Forward: longitude = centerLon ± (westComponent * correctionFactor)
-    // Inverse: lonDiff / correctionFactor to get azimuth component
+
+    // Apply inverse of longitude correction used in the inverse transform (if any)
     const correctionFactor = config.longitudeCorrectionFactor || 1.43;
     const azimuthComponent = Math.abs(lonDiff) / correctionFactor;
-    
-    // Determine azimuth from longitude difference
+
+    // Determine azimuth (degrees clockwise from north)
     let azimuth;
     if (lonDiff > 0) {
         azimuth = azimuthComponent;
     } else {
         azimuth = 360 - azimuthComponent;
     }
-    
-    // Apply map orientation
-    azimuth = (azimuth - config.orientation) % 360;
+
+    // Apply map orientation offset
+    azimuth = (azimuth - (config.orientation || 0)) % 360;
     if (azimuth < 0) azimuth += 360;
-    
-    // Convert azimuth and rho to cartesian coordinates
+
+    // Convert azimuth and rho to cartesian (image) coordinates
     const azimuthRad = azimuth * Math.PI / 180;
     const dx = rho * Math.sin(azimuthRad);
     const dy = -rho * Math.cos(azimuthRad);
-    
-    // Convert to actual image pixel coordinates
+
     const actualPixelX = config.centerPixelX + dx;
     const actualPixelY = config.centerPixelY + dy;
-    
+
     return {
         actualPixelX: actualPixelX,
         actualPixelY: actualPixelY,
@@ -76,16 +71,14 @@ function actualPixelToBrowserPixel(actualPixelX, actualPixelY, scaleX, scaleY) {
 }
 
 function pixelToCoordinatesLambertAzimuthal(px, py, config) {
-    // Lambert Azimuthal Equal-Area Projection (South Pole centered)
     // Translate pixel coordinates relative to projection center
     const dx = px - config.centerPixelX;
     const dy = py - config.centerPixelY;
-    
-    // Convert to polar coordinates (distance and azimuth)
+
+    // Distance from center in pixels
     const rho = Math.sqrt(dx * dx + dy * dy);
-    
-    // Special case: at the center (south pole), azimuth is undefined
-    // Return the center coordinates
+
+    // Special-case: near center -> south pole
     if (rho < 0.1) {
         return {
             longitude: config.centerLongitude,
@@ -93,56 +86,42 @@ function pixelToCoordinatesLambertAzimuthal(px, py, config) {
             rho: rho
         };
     }
-    
-    // Use latitude-based sectioning for regional scale variation
-    // Different latitude zones have different scale requirements
+
+    // Choose scale regionally if available (heuristic thresholds chosen to match map)
     let scale = config.scale;
     if (config.regionalScales) {
         const scales = config.regionalScales;
-        // Group by distance from center (which roughly correlates with latitude)
-        if (rho < 1800) scale = scales.near || config.scale;         // Near pole (-50°S to -90°S)
-        else if (rho < 2200) scale = scales.mid || config.scale;     // Mid (-40°S to -50°S)
-        else if (rho < 2500) scale = scales.far || config.scale;     // Far (-30°S to -40°S)
-        else scale = scales.vfar || config.scale;                     // Very far (-23°S and north)
+        if (rho < 1800) scale = scales.near || config.scale;
+        else if (rho < 2200) scale = scales.mid || config.scale;
+        else if (rho < 2500) scale = scales.far || config.scale;
+        else scale = scales.vfar || config.scale;
     }
-    
-    // For Lambert Azimuthal Equal-Area: azimuth = atan2(dE, dN)
-    let azimuth = Math.atan2(dx, -dy) * 180 / Math.PI;  // Azimuth in degrees from north
-    
-    // Apply map orientation
-    azimuth = (azimuth + config.orientation) % 360;
+
+    // Azimuth: atan2(dx, -dy) gives degrees clockwise from north
+    let azimuth = Math.atan2(dx, -dy) * 180 / Math.PI;
+    azimuth = (azimuth + (config.orientation || 0)) % 360;
     if (azimuth < 0) azimuth += 360;
-    
-    // Lambert Azimuthal Equal-Area inverse formulas (South Pole centered)
+
+    // Inverse Lambert Azimuthal Equal-Area (south-pole-centered)
     const asinArg = rho / (scale * 2);
-    
-    // Clamp to [-1, 1] to prevent NaN from asin
     const clampedArg = Math.max(-1, Math.min(1, asinArg));
     const latitude = 2 * Math.asin(clampedArg) * 180 / Math.PI - 90;
-    
-    // Calculate longitude from azimuth
-    // Note: azimuth alone underestimates eastward/westward displacement due to projection
-    // Apply a correction factor that increases with angle from the center meridian
-    let azimuthFromCenter = Math.abs(azimuth - 360); // Distance from due north (0°/360°)
-    if (azimuthFromCenter > 180) azimuthFromCenter = 360 - azimuthFromCenter;
-    
-    // Correction factor: scales azimuth displacement to match actual longitude
+
+    // Compute longitude applying the correction factor used in forward transform
     const correctionFactor = config.longitudeCorrectionFactor || 1.43;
-    
-    let longitude = config.centerLongitude + azimuthFromCenter * Math.sign(azimuth - 180) * correctionFactor;
-    
-    // Simpler approach: just apply correction to westward/eastward component
+
+    // Convert azimuth into east/west components and apply correction
     const westComponent = azimuth > 180 ? (360 - azimuth) : 0;
-    const eastComponent = azimuth < 180 && azimuth > 0 ? azimuth : 0;
-    
-    longitude = config.centerLongitude - (westComponent * correctionFactor) + (eastComponent * correctionFactor);
-    
-    // Normalize to -180 to 180 range
+    const eastComponent = (azimuth <= 180) ? azimuth : 0;
+
+    let longitude = config.centerLongitude - (westComponent * correctionFactor) + (eastComponent * correctionFactor);
+
+    // Normalize longitude to [-180, 180]
     while (longitude > 180) longitude -= 360;
     while (longitude < -180) longitude += 360;
-    
-    return { 
-        longitude: longitude, 
+
+    return {
+        longitude: longitude,
         latitude: latitude,
         rho: rho,
         azimuth: azimuth

@@ -9,16 +9,7 @@ const clues = {
 const mapConfig = {
     centerPixelX: 366,
     centerPixelY: 2615,
-    centerLongitude: -60,
-    scale: 2400,
-    longitudeCorrectionFactor: 1.43,
-    regionalScales: {
-        near: 2498,
-        mid: 2402,
-        far: 2351,
-        vfar: 2333
-    },
-    orientation: 0
+    centerLongitude: -60
 };
 
 let clueIndex = 1;
