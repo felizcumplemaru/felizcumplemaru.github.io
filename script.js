@@ -9,7 +9,14 @@ const clues = {
 const mapConfig = {
     centerPixelX: 366,
     centerPixelY: 2615,
-    centerLongitude: -60
+    centerLongitude: -60,
+    scale: 2400,
+    longitudeCorrectionFactor: 1.43,
+    // regionalScales can be an array of 8 values (center outward) which
+    // you can fill with the precise numbers you'll calculate. Example
+    // placeholder array below — replace with your computed values.
+    regionalScales: [2498, 2475, 2450, 2535, 2505, 2440, 2385, 2340],
+    orientation: 0
 };
 
 let clueIndex = 1;

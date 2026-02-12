@@ -1,3 +1,28 @@
+// Helper: select a regional scale based on angular distance from the south pole.
+// Supports legacy 4-key objects (`near`, `mid`, `far`, `vfar`) or an array of 8
+// scales (ordered from center outward).
+function getRegionalScaleForAngularDistance(config, angularDist) {
+    const rs = config.regionalScales;
+    if (!rs) return config.scale;
+
+    if (Array.isArray(rs)) {
+        const thresholds = [25, 30, 35, 40, 45, 50, 55];
+        for (let i = 0; i < thresholds.length; i++) {
+            if (angularDist <= thresholds[i]) return rs[i] || config.scale;
+        }
+        return rs[7] || config.scale;
+    }
+
+    if (typeof rs === 'object') {
+        if (angularDist <= 40) return rs.near || config.scale;
+        if (angularDist <= 50) return rs.mid || config.scale;
+        if (angularDist <= 60) return rs.far || config.scale;
+        return rs.vfar || config.scale;
+    }
+
+    return config.scale;
+}
+
 // Inverse projection: convert coordinates to actual image pixel coordinates
 function coordinatesToPixelLambertAzimuthal(latitude, longitude, config) {
     // Special case: south pole
@@ -14,11 +39,7 @@ function coordinatesToPixelLambertAzimuthal(latitude, longitude, config) {
     // Determine appropriate scale based on angular distance (allow regional overrides)
     let scale = config.scale;
     if (config.regionalScales) {
-        const scales = config.regionalScales;
-        if (angularDist <= 40) scale = scales.near || config.scale;
-        else if (angularDist <= 50) scale = scales.mid || config.scale;
-        else if (angularDist <= 60) scale = scales.far || config.scale;
-        else scale = scales.vfar || config.scale;
+        scale = getRegionalScaleForAngularDistance(config, angularDist);
     }
 
     // Convert angular distance to radians and compute rho using spherical Lambert Azimuthal equal-area
@@ -87,14 +108,15 @@ function pixelToCoordinatesLambertAzimuthal(px, py, config) {
         };
     }
 
-    // Choose scale regionally if available (heuristic thresholds chosen to match map)
+    // Choose scale regionally if available. Compute a tentative angular
+    // distance using the base `config.scale`, then pick the matching regional scale.
     let scale = config.scale;
     if (config.regionalScales) {
-        const scales = config.regionalScales;
-        if (rho < 1800) scale = scales.near || config.scale;
-        else if (rho < 2200) scale = scales.mid || config.scale;
-        else if (rho < 2500) scale = scales.far || config.scale;
-        else scale = scales.vfar || config.scale;
+        const asinArgTent = rho / (config.scale * 2);
+        const clampedTent = Math.max(-1, Math.min(1, asinArgTent));
+        const angularDistTent = 2 * Math.asin(clampedTent) * 180 / Math.PI;
+        scale = getRegionalScaleForAngularDistance(config, angularDistTent);
+        console.log(scale)
     }
 
     // Azimuth: atan2(dx, -dy) gives degrees clockwise from north
@@ -129,25 +151,35 @@ function pixelToCoordinatesLambertAzimuthal(px, py, config) {
 }
 
 let coordinatesTests = [
-    { pixel: {x: 366, y: 2615}, expected: {lat: -90, lon: 0} },
-    { pixel: {x: 365, y: 906}, expected: {lat: -50, lon: 60} },
-    { pixel: {x: 158, y: 919}, expected: {lat: -50, lon: 70} },
-    { pixel: {x: 365, y: 585}, expected: {lat: -40, lon: 60} },
-    { pixel: {x: 118, y: 599}, expected: {lat: -40, lon: 70} },
-    { pixel: {x: 365, y: 264}, expected: {lat: -30, lon: 60} },
-    { pixel: {x: 85, y: 280}, expected: {lat: -30, lon: 70} },
+    // 20-30
+    { pixel: {x: 150, y: 43}, expected: {lat: -22.8140442, lon: 67.1805016} },
+    { pixel: {x: 236, y: 41}, expected: {lat: -22.8682513, lon: 64.3173752} },
     { pixel: {x: 365, y: 54}, expected: {lat: -23.43, lon: 60} },
     { pixel: {x: 67, y: 70}, expected: {lat: -23.43, lon: 70} },
+    { pixel: {x: 524, y: 128}, expected: {lat: -25.5924115, lon: 54.5929786} },
+    { pixel: {x: 315, y: 126}, expected: {lat: -25.6546517, lon: 61.7100661} },
+    { pixel: {x: 244, y: 251}, expected: {lat: -29.4958206, lon: 64.3404028} },
+    // 30-40
+    { pixel: {x: 365, y: 264}, expected: {lat: -30, lon: 60} },
+    { pixel: {x: 85, y: 280}, expected: {lat: -30, lon: 70} },
     { pixel: {x: 275, y: 407}, expected: {lat: -34.3832745, lon: 63.3850129} },
     { pixel: {x: 276, y: 426}, expected: {lat: -35.000061, lon: 63.3855941} },
     { pixel: {x: 149, y: 466}, expected: {lat: -35.9995233, lon: 68.2960968} },
-    { pixel: {x: 236, y: 41}, expected: {lat: -22.8682513, lon: 64.3173752} },
-    { pixel: {x: 315, y: 126}, expected: {lat: -25.6546517, lon: 61.7100661} },
-    { pixel: {x: 200, y: 991}, expected: {lat: -52.3952103, lon: 68.4269718} },
-    { pixel: {x: 411, y: 961}, expected: {lat: -51.6286841, lon: 57.7425847} },
-    { pixel: {x: 524, y: 128}, expected: {lat: -25.5924115, lon: 54.5929786} },
-    { pixel: {x: 150, y: 43}, expected: {lat: -22.8140442, lon: 67.1805016} },
+    { pixel: {x: 165, y: 562}, expected: {lat: -38.9866808, lon: 68.0042446} },
+    // 40-50
+    { pixel: {x: 365, y: 585}, expected: {lat: -40, lon: 60} },
+    { pixel: {x: 118, y: 599}, expected: {lat: -40, lon: 70} },
     { pixel: {x: 263, y: 684}, expected: {lat: -42.9581164, lon: 64.2978424} },
+    { pixel: {x: 194, y: 786}, expected: {lat: -45.9989444, lon: 67.5889419} },
+    { pixel: {x: 104, y: 796}, expected: {lat: -45.9995282, lon: 71.6465389} },
+    { pixel: {x: 185, y: 910}, expected: {lat: -49.7863612, lon: 68.6268418} },
+    // 50-60
+    { pixel: {x: 365, y: 906}, expected: {lat: -50, lon: 60} },
+    { pixel: {x: 158, y: 919}, expected: {lat: -50, lon: 70} },
+    { pixel: {x: 411, y: 961}, expected: {lat: -51.6286841, lon: 57.7425847} },
+    { pixel: {x: 200, y: 991}, expected: {lat: -52.3952103, lon: 68.4269718} },
+    // South pole
+    { pixel: {x: 366, y: 2615}, expected: {lat: -90, lon: 60} },
 ]
 
 
@@ -157,14 +189,15 @@ const mapConfig = {
     centerLongitude: -60,
     scale: 2400,
     longitudeCorrectionFactor: 1.43,
-    regionalScales: {
-        near: 2498,
-        mid: 2402,
-        far: 2351,
-        vfar: 2333
-    },
+    // regionalScales can be an array of 8 values (center outward) which
+    // you can fill with the precise numbers you'll calculate. Example
+    // placeholder array below — replace with your computed values.
+    regionalScales: [2498, 2475, 2450, 2535, 2505, 2440, 2385, 2340],
     orientation: 0
 };
+
+let totalLatDiff = 0;
+let totalLonDiff = 0;
 
 for (let test of coordinatesTests) {
     const { longitude, latitude, rho, azimuth} = pixelToCoordinatesLambertAzimuthal(test.pixel.x, test.pixel.y, mapConfig);
@@ -178,7 +211,11 @@ for (let test of coordinatesTests) {
     
     console.log(`Test Pixel (${test.pixel.x}, ${test.pixel.y}): Expected (${test.expected.lat}°S, ${test.expected.lon}°W), Got (${latitude.toFixed(2)}°S, ${longitude.toFixed(2)}°W) -> Lat Diff: ${latDiff.toFixed(2)}, Lon Diff: ${lonDiff.toFixed(2)}`);
     console.log(`  rho=${rho.toFixed(2)}, azimuth=${azimuth?.toFixed(2) || 'N/A'}°, expectedDist=${expectedAngularDist}°, calculatedScale=${shouldBeScale.toFixed(0)}`);
+    totalLatDiff += latDiff;
+    totalLonDiff += lonDiff;
 }
+
+console.log(`Average Latitude Diff: ${(totalLatDiff / coordinatesTests.length).toFixed(2)}°, Average Longitude Diff: ${(totalLonDiff / coordinatesTests.length).toFixed(2)}°`);
 
 // for (let test of coordinatesTests) {
 //     const pixelCoords = coordinatesToPixelLambertAzimuthal(test.expected.lat, -test.expected.lon, mapConfig);

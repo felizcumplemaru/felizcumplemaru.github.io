@@ -1,3 +1,28 @@
+// Helper: select a regional scale based on angular distance from the south pole.
+// Supports legacy 4-key objects (`near`, `mid`, `far`, `vfar`) or an array of 8
+// scales (ordered from center outward).
+function getRegionalScaleForAngularDistance(config, angularDist) {
+    const rs = config.regionalScales;
+    if (!rs) return config.scale;
+
+    if (Array.isArray(rs)) {
+        const thresholds = [25, 30, 35, 40, 45, 50, 55];
+        for (let i = 0; i < thresholds.length; i++) {
+            if (angularDist <= thresholds[i]) return rs[i] || config.scale;
+        }
+        return rs[7] || config.scale;
+    }
+
+    if (typeof rs === 'object') {
+        if (angularDist <= 40) return rs.near || config.scale;
+        if (angularDist <= 50) return rs.mid || config.scale;
+        if (angularDist <= 60) return rs.far || config.scale;
+        return rs.vfar || config.scale;
+    }
+
+    return config.scale;
+}
+
 // Inverse projection: convert coordinates to actual image pixel coordinates
 function coordinatesToPixelLambertAzimuthal(latitude, longitude, config) {
     // Special case: south pole
@@ -14,11 +39,7 @@ function coordinatesToPixelLambertAzimuthal(latitude, longitude, config) {
     // Determine appropriate scale based on angular distance (allow regional overrides)
     let scale = config.scale;
     if (config.regionalScales) {
-        const scales = config.regionalScales;
-        if (angularDist <= 40) scale = scales.near || config.scale;
-        else if (angularDist <= 50) scale = scales.mid || config.scale;
-        else if (angularDist <= 60) scale = scales.far || config.scale;
-        else scale = scales.vfar || config.scale;
+        scale = getRegionalScaleForAngularDistance(config, angularDist);
     }
 
     // Convert angular distance to radians and compute rho using spherical Lambert Azimuthal equal-area
@@ -70,6 +91,7 @@ function actualPixelToBrowserPixel(actualPixelX, actualPixelY, scaleX, scaleY) {
     };
 }
 
+
 function pixelToCoordinatesLambertAzimuthal(px, py, config) {
     // Translate pixel coordinates relative to projection center
     const dx = px - config.centerPixelX;
@@ -87,14 +109,16 @@ function pixelToCoordinatesLambertAzimuthal(px, py, config) {
         };
     }
 
-    // Choose scale regionally if available (heuristic thresholds chosen to match map)
+    // Choose scale regionally if available. We compute a provisional angular
+    // distance from the south pole from `rho` using the base `config.scale`,
+    // then pick the matching regional scale (supports 8 regions).
     let scale = config.scale;
     if (config.regionalScales) {
-        const scales = config.regionalScales;
-        if (rho < 1800) scale = scales.near || config.scale;
-        else if (rho < 2200) scale = scales.mid || config.scale;
-        else if (rho < 2500) scale = scales.far || config.scale;
-        else scale = scales.vfar || config.scale;
+        // compute tentative angular distance (degrees) using base scale
+        const asinArgTent = rho / (config.scale * 2);
+        const clampedTent = Math.max(-1, Math.min(1, asinArgTent));
+        const angularDistTent = 2 * Math.asin(clampedTent) * 180 / Math.PI;
+        scale = getRegionalScaleForAngularDistance(config, angularDistTent);
     }
 
     // Azimuth: atan2(dx, -dy) gives degrees clockwise from north
