@@ -171,6 +171,7 @@ async function guess() {
 
 function showAnswer() {
     let distance = haversineDistanceKm(guessLat, guessLon, clues['lat'], clues['lon']);
+    congrat = "";
     if (distance < 100) {
         congrat = "Muy bien!\n"
     }
