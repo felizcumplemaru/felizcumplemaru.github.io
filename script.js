@@ -175,5 +175,9 @@ function showAnswer() {
 }
 
 function newTweet() {
+    const guessButton = document.getElementById("guess-button");
+    if (guessButton) {
+        guessButton.disabled = true;
+    }
     location.reload();
 }
