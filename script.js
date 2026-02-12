@@ -172,10 +172,10 @@ async function guess() {
 function showAnswer() {
     let distance = haversineDistanceKm(guessLat, guessLon, clues['lat'], clues['lon']);
     congrat = "";
-    if (distance < 100) {
+    if (distance < 150) {
         congrat = "Muy bien!\n"
     }
-    alert(`${congrat}La respuesta es: ${clues['lat']}°S, ${Math.abs(clues['lon'])}°W\nTu intento fue: ${guessLat}°S, ${Math.abs(guessLon)}°W\nTu distancia al objetivo es: ${distance.toFixed(2)} km`);
+    alert(`${congrat}\nTu distancia al objetivo es: ${distance.toFixed(2)} km`);
 }
 
 function newTweet() {
